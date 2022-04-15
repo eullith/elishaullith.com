@@ -1,0 +1,371 @@
+:root {
+    --dark: #0a0a0a;
+    --accent: #F06553;
+    --light: #ffffff;
+    --purple: #6600ff;
+    --accent2: #731bf6e0;
+
+}
+
+body {
+    font-family: 'Montserrat', serif !important;
+    font-style: normal;
+    font-weight: 500;
+    background-color: #f1f1f1;
+    color: #0a0a0a !important;
+}
+
+.material-icons {
+    color: #f1f1f1;
+}
+
+.container-padding {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.dark-div {
+    padding-left: 9%;
+    padding-right: 9%;
+    background-color: #6600ff;
+    color: #f1f1f1;
+}
+
+.black-div {
+    padding-left: 9%;
+    padding-right: 9%;
+    background-color: black;
+    color: #f1f1f1;
+}
+
+.div-space {
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.blue {
+    background-color: var(--purple) !important;
+    color: #6600ff;
+}
+
+a.effect-underline:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: var(--purple);
+    transition: width .3s;
+}
+
+a.effect-underline:hover:after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.effect-underline:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: var(--purple);
+    transition: width .3s;
+}
+
+.effect-underline:hover:after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.minion {
+    font-family: minionpro-condensed-caption, serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.mbold {
+    font-family: minion-pro, serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .top {
+        padding-top: 8rem;
+    }
+
+    .m {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .top {
+        padding-top: 3rem;
+    }
+
+    .m {
+        text-align: center;
+        padding-left: 5rem;
+    }
+}
+
+.elisha {
+    font-size: 1000;
+    font-weight: 600;
+    color: #6600ff !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#button {
+    background-color: #6600ff !important;
+    border: 50px !important;
+}
+
+.card {
+    padding: 2%;
+    border-style: none;
+    background-color: transparent;
+    height: 400px;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(.7, .7)
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-element {
+    animation: fade-in 1.4s;
+}
+
+.b {
+    border-style: solid !important;
+    border-color: #6600ff !important;
+}
+
+.align {
+    vertical-align: bottom;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.bg-yellow {
+    background-color: var(--yellow) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.text-dark {
+    color: var(--dark) !important;
+}
+
+.text-yellow {
+    color: var(--yellow) !important;
+}
+
+.card-l {
+    border: none;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 13px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 13px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 13px;
+}
+
+.btn-outline-primary:active {
+    background-color: #fff !important;
+    color: #6600ff !important;
+    border-color: #6600ff !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6600ff !important;
+    border-color: #6600ff !important;
+}
+
+.nav-link {
+    color: black;
+}
+
+.btn-sm {
+    color: black;
+}
+
+.active {
+    color: #6600ff !important;
+}
+
+ion-icon {
+    color: #6600ff;
+}
+
+
+/*hover play button*/
+
+.itemsContainer {
+    background: white;
+    float: left;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-right: auto;
+}
+
+.itemsContainer:hover .play {
+    display: block;
+}
+
+.play {
+    position: absolute;
+    display: none;
+    top: 40%;
+    width: 40px;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    opacity: 0.9;
+}
+
+.scrolling-active {
+    background-color: #f1f1f1;
+}
+
+#topRightFixed {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    padding: 0px;
+}
+
+.btn-primary-round {
+    background-color: #F06553;
+    border-color: #F06553 !important;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.btn-primary {
+    background-color: #6600ff;
+    border-color: #6600ff !important;
+}
+
+.btn-primary-s {
+    background-color: #f0655300 !important;
+    border-color: #f0655300 !important;
+}
+
+.btn-primary:hover {
+    background-color: #4B00C5;
+    border-color: #4B00C5 !important;
+}
+
+.btn-primary-s:hover {
+    color: #4B00C5;
+}
+
+.demo {
+    background-color: #fff;
+    background-image: radial-gradient(circle, #a6a6a605 20%, transparent 10%), radial-gradient(circle, #a6a6a620 20%, transparent 10%);
+    background-size: 8px 8px;
+    background-position: 0 0, 100px 100px;
+}
+
+.material-icons.md-dark {
+    color: rgb(0, 0, 0);
+    vertical-align: middle;
+}
+
+.material-icons.md-dark:hover {
+    color: #4B00C5;
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.obj {
+    transition: transform 250ms;
+}
+
+.obj:hover {
+    transform: translateY(-10px);
+}
+
+.btn-outline-secondary:hover{
+    color: white;
+    border-color: #4B00C5;
+    background-color: #4B00C5 !important;
+}
