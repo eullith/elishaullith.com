@@ -43,6 +43,11 @@ body {
     padding-top: 10%;
 }
 
+.div-footer {
+    padding-bottom: 6%;
+    padding-top: 10%;
+}
+
 .blue {
     background-color: var(--purple) !important;
     color: #6600ff;
@@ -52,6 +57,7 @@ a.effect-underline:after {
     content: '';
     display: block;
     width: 0%;
+    max-width: 70px;
     height: 3px;
     background-color: var(--purple);
     transition: width .3s;
@@ -59,6 +65,7 @@ a.effect-underline:after {
 
 a.effect-underline:hover:after {
     width: 100%;
+    max-width: 70px;
     transition: width .3s;
 }
 
@@ -121,11 +128,12 @@ a.effect-underline:hover:after {
     border: 50px !important;
 }
 
-.card {
+.card-x {
     padding: 2%;
     border-style: none;
     background-color: transparent;
-    height: 400px;
+    height: auto;
+    min-height: 150px;
 }
 
 .card-img-top {
@@ -314,11 +322,20 @@ ion-icon {
 }
 
 .btn-primary-round {
-    background-color: #F06553;
-    border-color: #F06553 !important;
+    background-color: #0f071b7a;
+    border-color: none;
     border-radius: 100%;
     height: 50px;
     width: 50px;
+}
+
+.carousel-control-prev{
+    background-color: #0f071b7a;
+    border-color: none;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    align-self: center;
 }
 
 .btn-primary {
@@ -373,3 +390,65 @@ ion-icon {
     border-color: #4B00C5;
     background-color: #4B00C5 !important;
 }
+
+.btn-outline-white {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-white:hover {
+    border-color: white;
+    color: #6600ff;
+    background-color: white;
+}
+
+.xl {
+    width: 130px;
+    height: 42px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    transition-duration: 0.5s;
+}
+
+/* display 4 */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+}
+

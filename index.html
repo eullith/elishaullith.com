@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+    <link rel="icon" href="./Assets/logo_eu.svg" type="image/icon type">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +12,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
@@ -18,7 +24,7 @@
     <!-- Custom styles for this template -->
     <link href="/style.css" rel="stylesheet">
 
-    <title>Elisha Ullith</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -26,7 +32,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navlink">
             <div class="container-fluid" style="padding-top: 0.5%; padding-left: 2%; padding-right: 2%;">
                 <a class="navbar-brand" href="#">
-                    <img src="/Assets/logo_eu.svg" alt="logo" width="auto" height="35" class="logo-img"></a>
+                    <img src="/Assets/logo_eu.svg" alt="logo" width="auto" height="35" id="logo-img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,40 +51,107 @@
 
     <div class="container-fluid container-padding div-space demo" id="div">
         <br>
-        <div class="row">
-            <div class="col-8" style="padding-top: 6%;">
-                <h1 class="display-5">Let's create something
-                </h1>
-                <h1 class="display-1 elisha display-1 txt-rotate" data-period="1500"
-                    data-rotate='[ "engaging.", "interactive.", "entertaining.", "unique."]' style="color: #6600ff;">
-                    &lt;span&gt;</h1> <br>
-                <div class="row">
-                    <div class="col" style="padding-top:3%">
-                        <button type="button" class="btn btn-primary">Hire me</button>
-                        <button type="button" class="btn btn-primary-s" style="padding-left: 3%;">Explore my work <span
-                                class="material-icons md-dark">
-                                navigate_next
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <br>
+        <div style="padding-top: 6%;">
+            <h1 class="display-5">Let's create something</h1>
+            <h1 class="display-1 elisha display-1 txt-rotate" data-period="1500"
+                data-rotate='[ "engaging.", "interactive.", "entertaining.", "unique."]' style="color: #6600ff;">
+                &lt;span&gt;</h1> <br>
+            <div class="gap-2" style="padding-top:3%">
+                <button type="button" class="btn btn-primary xl">Hire me</button>
+                <button type="button" class="btn btn-primary-s">Explore my work
+                    <span class="material-icons md-dark">
+                        navigate_next
+                    </span>
+                </button>
             </div>
+            <br>
         </div>
     </div>
 
     <div class="container-fluid dark-div div-space" id="heading">
-        <div class="row">
-            <div class="col-8 my-auto">
-                <h5 style="max-width: 75%; padding-bottom: 4%;">Elisha is an experienced eLearning Developer with a
-                    passion
-                    for developing fun, interactive and engaging eLearning courses.</h5>
+        <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">Want to review my work samples?</h1>
+        <h5 style="max-width: 75%; padding-bottom: 2%;">Elisha is an experienced eLearning Developer with a
+            passion
+            for developing fun, interactive and engaging eLearning courses.</h5>
+        <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="my-auto">
             </div>
-            <div class="col-4">
-                <img src="/Assets/Profile.png" width="90%">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/block2.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/block1.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/eu_white_logo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/dev.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/logo_eu.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/block1.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/coach.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="Assets/cube.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
     </div>
 
     <div class="container-fluid black-div div-space" id="startchange">
@@ -86,7 +159,7 @@
             for you?</h1>
         <br>
         <div class="card-group">
-            <div class="card obj">
+            <div class="card card-x obj">
                 <img src="/Assets/dev.svg" class="card-img-top" alt="..."
                     style="width: 163px; padding-left: 10%; padding-bottom: 8%">
                 <div class="card-body">
@@ -94,24 +167,25 @@
                     <p class="card-text" style="font-weight: 100;">Take your eLearning content to the next
                         level</p>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-outline-secondary">Learn How</button>
+                        <button type="button" class="btn btn-outline-secondary xl">Learn How</button>
                     </div>
                 </div>
             </div>
-            <div class="card obj">
+            <div class="card card-x obj">
                 <img src="/Assets/cube.svg" class="card-img-top" alt="..."
                     style="width: 150px; padding-left: 10%; padding-bottom: 8%">
                 <div class="card-body">
                     <h5 class="card-title">Personalized Storyline Training</h5>
-                    <p class="card-text" style="font-weight: 100;">Become proficient or improve your skills in Storyline
+                    <p class="card-text" style="font-weight: 100;">Become proficient or improve your skills in
+                        Storyline
                         360
                     </p>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-outline-secondary">Learn How</button>
+                        <button type="button" class="btn btn-outline-secondary xl">Learn How</button>
                     </div>
                 </div>
             </div>
-            <div class="card obj">
+            <div class="card card-x obj">
                 <img src="/Assets/coach.svg" class="card-img-top" alt="..."
                     style="width: 124px; padding-left: 10%; padding-bottom: 8%">
                 <div class="card-body">
@@ -119,40 +193,70 @@
                     <p class="card-text" style="font-weight: 100;">Flexible sessions to get advices on your
                         eLearning project</p>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-outline-secondary">Learn How</button>
+                        <button type="button" class="btn btn-outline-secondary xl">Learn How</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid dark-div div-space" id="heading">
-        <h1>Hello! I'm Elisha, <br>a freelance <span class="elisha" style="color: #6600ff;">eLearning
-                Developer</span><br> working in Nicaragua.</br>
-        </h1>
-        <section id="hero" class="d-flex flex-column justify-content-center">
-            <div class="container" data-aos="zoom-in" data-aos-delay="100">
-                <h1>Brandon Johnson</h1>
-                <p>I'm <span class="typed" style="color: white;"
-                        data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+    <div class="container-fluid container-padding div-space demo" id="heading">
+        <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">What people say?</h1>
+        <div class="card-group">
+            <div class="card text-white bg-dark obj" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text" style="font-weight: 100; size:calc(text);">"Highly qualified freelance. She
+                        delivers the work on
+                        time and with good
+                        results and is always attentive to feedback to make modifications to the work. Highly
+                        recommended if you need a professional expert in Articulate Storyline and instructional
+                        design."</p>
+                    <div class="card-footer">
+                        <p class="card-text"><small class="text-muted">- Maria Baeta Ramon, Digital
+                                Preventor</small>
+                    </div>
+                </div>
             </div>
+            <div class="card  obj" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text" style="font-weight: 100;">"Elisha was wonderful to work with. I had a tight
+                        deadline for a campaign
+                        and she was able to communicate and deliver the project immediately. I look forward to
+                        working with her again in the future."</p>
+                    <div class="card-footer">
+                        <p class="card-text"><small class="text-muted">Rebecca Busch</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-white bg-dark obj" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text" style="font-weight: 100;">"Elisha was wonderful to work with. I had a tight
+                        deadline for a campaign
+                        and she was able to communicate and deliver the project immediately. I look forward to
+                        working with her again in the future."</p>
+                    <div class="card-footer">
+                        <p class="card-text"><small class="text-muted">Rebecca Busch</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container-fluid dark-div div-space" id="heading">
-        <h1>Hello! I'm Elisha, <br>a freelance <span class="elisha" style="color: #6600ff;">eLearning
-                Developer</span><br> working in Nicaragua.</br>
-        </h1>
-        <section id="hero" class="d-flex flex-column justify-content-center">
-            <div class="container" data-aos="zoom-in" data-aos-delay="100">
-                <h1>Brandon Johnson</h1>
-                <p>I'm <span class="typed" style="color: white;"
-                        data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
-            </div>
-    </div>
+    <footer>
+        <div class="container-fluid black-div div-footer">
+            <h2 class="display-5" style="font-weight: 600;">Have a project?</h4>
+                <br>
+                <h5>Let's get in touch</h5>
+                <h5>m: <a style="color: white; font-size: 20px;"
+                        href="mailto:ullithtaiyn@gmail.com"> ullithtaiyn@gmail.com</a></h5>
+                    <h5>t: +505 86316922</h6>
+        </div>
+    </footer>
 
-    <div class="container" id="topRightFixed">
+    <div class="container-fluid container-padding" id="topRightFixed">
         <button class="btn btn-primary-round" onclick="topFunction()" id="myBtn" title="Go to top">
-            <span class="material-icons md-36" style="display: flex; justify-content: center; align-items: center;">
+            <span class="material-icons md-36"
+                style="display: flex; justify-content: center; align-items: center; padding-right: 2%;">
                 expand_less
             </span>
         </button>
@@ -254,6 +358,9 @@
                     $("#navlink").css({
                         "background-color": "white", "color": "drop-shadow(26px 26px 10px black)"
                     });
+                    $("#logo-img").css({
+                        "source": "/Asset/eu_white_logo"
+                    });
                 }
                 else {
                     $("#navlink").css({ "background-color": "transparent" });
@@ -261,6 +368,26 @@
 
             })
         })
+    </script>
+
+    <script>
+        $('.carousel .carousel-item').each(function () {
+            var minPerSlide = 4;
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < minPerSlide; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
 
     </script>
 
@@ -274,7 +401,7 @@
                 }
             })
         })
-            <script> -->
+     -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
