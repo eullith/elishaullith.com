@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Montserrat', serif !important;
+    font-family: 'Lato', serif !important;
     font-style: normal;
     font-weight: 500;
     background-color: #f1f1f1;
@@ -120,7 +120,7 @@ a.effect-underline:hover:after {
     font-size: 1000;
     font-weight: 600;
     color: #6600ff !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #button {
@@ -150,7 +150,7 @@ a.effect-underline:hover:after {
 }
 
 .nav-link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
 }
 
