@@ -53,7 +53,7 @@ body {
     color: #3c50ff;
 }
 
-.minion{
+.minion {
     font-family: minionpro-condensed-caption, serif;
     font-style: normal;
     font-weight: 500;
@@ -111,11 +111,11 @@ body {
     object-fit: cover;
 }
 
-.card-carousel{
+.card-carousel {
     size: 200px !important;
 }
 
-.card-body{
+.card-body {
     border: none;
 
 }
@@ -261,7 +261,7 @@ body {
     color: #1965e0 !important;
 }
 
-.navbar{
+.navbar {
     background-color: white !important;
 }
 
@@ -334,7 +334,7 @@ ion-icon {
     align-self: center;
 }
 
-.btn-nav{
+.btn-nav {
     background-color: transparent !important;
     color: black !important;
     border-color: #3c50ff !important;
@@ -405,7 +405,7 @@ ion-icon {
     transform: translateY(-10px);
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
     border-radius: 35px !important;
 }
 
@@ -433,63 +433,77 @@ ion-icon {
 }
 
 @media (max-width: 768px) {
-    .carousel-inner .carousel-items > div {
-      display: none;
-    }
-    .carousel-inner .carousel-items > div:first-child {
-      display: block;
+    .carousel-inner .carousel-items>div {
+        display: none;
     }
 
-  }
+    .carousel-inner .carousel-items>div:first-child {
+        display: block;
+    }
 
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+}
 
-    .elisha{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .elisha {
         font-size: 55px;
     }
 
-    .home-screen{
-        padding-bottom: 20% !important; 
-        padding-top: 40% !important; 
+    .home-screen {
+        padding-bottom: 20% !important;
+        padding-top: 40% !important;
+    }
+
+    .experience-text {
+        max-width: 100% !important;
+        padding-bottom: 4% !important;
+        font-weight: 400 !important;
     }
 }
-  
-.home-screen{
-    padding-bottom: 10%; padding-top: 16%; min-width: 500px;
+
+.home-screen {
+    padding-bottom: 10%;
+    padding-top: 16%;
+    min-width: 500px;
 }
 
-  .carousel-inner .carousel-items.active,
-  .carousel-inner .carousel-items-start,
-  .carousel-inner .carousel-items-next,
-  .carousel-inner .carousel-items-prev {
+.experience-text {
+    max-width: 75%;
+    padding-bottom: 2%;
+    font-weight: 400;
+}
+
+.carousel-inner .carousel-items.active,
+.carousel-inner .carousel-items-start,
+.carousel-inner .carousel-items-next,
+.carousel-inner .carousel-items-prev {
     display: flex;
     transition-duration: 10s;
-  }
-  
-  /* display 4 */
-  @media (min-width: 768px) {
+}
+
+/* display 4 */
+@media (min-width: 768px) {
+
     .carousel-inner .carousel-items-right.active,
     .carousel-inner .carousel-items-next,
     .carousel-items-next:not(.carousel-items-start) {
-      transform: translateX(25%) !important;
+        transform: translateX(25%) !important;
     }
-  
+
     .carousel-inner .carousel-item-left.active,
     .carousel-items-prev:not(.carousel-items-end),
     .active.carousel-items-start,
     .carousel-items-prev:not(.carousel-items-end) {
-      transform: translateX(-25%) !important;
+        transform: translateX(-25%) !important;
     }
-  
-    .carousel-items-next.carousel-items-start, .active.carousel-items-end {
-      transform: translateX(0) !important;
+
+    .carousel-items-next.carousel-items-start,
+    .active.carousel-items-end {
+        transform: translateX(0) !important;
     }
-  
+
     .carousel-inner .carousel-items-prev,
     .carousel-items-prev:not(.carousel-items-end) {
-      transform: translateX(-25%) !important;
+        transform: translateX(-25%) !important;
     }
-  }
+}
