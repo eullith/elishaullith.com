@@ -15,9 +15,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -30,7 +30,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navlink">
-            <div class="container-fluid" style="padding-top: 0.5%; padding-left: 2%; padding-right: 2%;">
+            <div class="container-fluid" style="padding-top: 0.5%;">
                 <a class="navbar-brand" href="#">
                     <img src="/Assets/logo_eu.svg" alt="logo" width="auto" height="35" id="logo-img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,119 +39,47 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="navbar-nav">
-                        <a class="nav-link effect-underline" aria-current="page" href="#">Works</a>
-                        <a class="nav-link effect-underline" href="#">Services</a>
-                        <a class="nav-link effect-underline" href="#">Contact</a>
-                        <a class="nav-link effect-underline" href="#">About</a>
+                        <a class="nav-link" aria-current="page" href="#">Works</a>
+                        <a class="nav-link" href="#startchange">Services</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link btn btn-nav" href="#">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="container-fluid container-padding div-space demo" id="div">
+    <div class="container-fluid container-padding" id="div">
         <br>
-        <div style="padding-top: 6%;">
-            <h1 class="display-6" style="font-weight: normal;">Let's create something</h1>
-            <h1 class="display-1 elisha txt-rotate" data-period="1500"
-                data-rotate='[ "engaging.", "interactive.", "entertaining.", "unique."]' style="color: #6600ff;">
-                &lt;span&gt;</h1> <br>
-            <div class="gap-2" style="padding-top:3%">
-                <button type="button" class="btn btn-primary xl">Hire me</button>
-                <button type="button" class="btn btn-primary-s">Explore my work
-                    <span class="material-icons md-dark">
-                        navigate_next
-                    </span>
-                </button>
+        <div class="row">
+            <div class="col home-screen">
+                <h1 class="display-6" style="font-weight: normal;">Let's create something</h1>
+                <h1 class="display-5 elisha txt-rotate" data-period="1500"
+                    data-rotate='[ "engaging.", "interactive.", "entertaining.", "unique."]' style="color: #6600ff; text-size-adjust: auto;
+                ">
+                    &lt;span&gt;</h1> <br>
+                <div class="gap-2" style="padding-top:3%">
+                    <button type="button" class="btn btn-primary xl">Hire me</button>
+                    <button type="button" class="btn btn-primary-s">Explore my work
+                        <span class="material-icons md-dark">
+                            navigate_next
+                        </span>
+                    </button>
+                </div>
+                <br>
             </div>
-            <br>
+            <div class="col" style="padding-bottom: 10%; padding-top: 6%;">
+                <img src="/Assets/main-asset-royal-blue.svg" class="img-fluid" alt="..." style="width: 550px;">
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid dark-div div-space" id="heading">
-        <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">Want to review my work samples?</h1>
-        <h5 style="max-width: 75%; padding-bottom: 2%; font-weight: 300;">Elisha is an experienced eLearning Developer with a
+    <div class="container-fluid  div-space" id="laptop-bkc">
+        <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">Explore my work</h1>
+        <h5 style="max-width: 75%; padding-bottom: 2%; font-weight: 300;">Elisha is an experienced eLearning Developer
+            with a
             passion
             for developing fun, interactive and engaging eLearning courses.</h5>
-        <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="my-auto">
-            </div>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/block2.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/block1.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/eu_white_logo.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/dev.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/logo_eu.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/block1.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/coach.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="Assets/cube.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </div>
 
     <div class="container-fluid black-div div-space" id="startchange">
@@ -200,42 +128,107 @@
         </div>
     </div>
 
-    <div class="container-fluid container-padding div-space demo" id="heading">
+    <div class="container-fluid container-padding div-space" id="heading">
         <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">What people say?</h1>
-        <div class="card-group">
-            <div class="card text-white bg-dark obj" style="width: 18rem;">
-                <div class="card-body">
-                    <p class="card-text" style="font-weight: 100; size:calc(text);">"Highly qualified freelance. She
-                        delivers the work on
-                        time and with good
-                        results and is always attentive to feedback to make modifications to the work. Highly
-                        recommended if you need a professional expert in Articulate Storyline and instructional
-                        design."</p>
-                    <div class="card-footer">
-                        <p class="card-text"><small class="text-muted">- Maria Baeta Ramon, Digital
-                                Preventor</small>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="card text-white bg-dark obj">
+                        <div class="card-bodyn d-block w-100">
+                            <div style="padding-top: 2%;">
+                                <span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span>
+                            </div>
+                            <p class="card-text" style="font-weight: 300; padding-top: 2%;">"Highly qualified freelance.
+                                She
+                                delivers the work on
+                                time and with good
+                                results and is always attentive to feedback to make modifications to the work. Highly
+                                recommended if you need a professional expert in Articulate Storyline and instructional
+                                design."</p>
+                            <div class="card-footer">
+                                <p class="card-text"><small class="text-muted">Maria Baeta Ramon, Digital
+                                        Preventor</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card  obj" style="width: 18rem;">
-                <div class="card-body">
-                    <p class="card-text" style="font-weight: 100;">"Elisha was wonderful to work with. I had a tight
-                        deadline for a campaign
-                        and she was able to communicate and deliver the project immediately. I look forward to
-                        working with her again in the future."</p>
-                    <div class="card-footer">
-                        <p class="card-text"><small class="text-muted">Rebecca Busch</small></p>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="card text-white bg-dark obj">
+                        <div class="card-body">
+                            <div style="padding-top: 2%;">
+                                <span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span>
+                            </div>
+                            <p class="card-text" style="padding-top: 2%; font-weight: 300;">"Elisha was a pleasure to
+                                work with and is an
+                                excellent communicator. Elisha delivered the Storyline content in an engaging way and
+                                was able
+                                to work with tight timelines. I look forward to working with her again."</p>
+                            <div class="card-footer">
+                                <p class="card-text"><small class="text-muted">- Kate Langley</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card text-white bg-dark obj" style="width: 18rem;">
-                <div class="card-body">
-                    <p class="card-text" style="font-weight: 100;">"Elisha was wonderful to work with. I had a tight
-                        deadline for a campaign
-                        and she was able to communicate and deliver the project immediately. I look forward to
-                        working with her again in the future."</p>
-                    <div class="card-footer">
-                        <p class="card-text"><small class="text-muted">Rebecca Busch</small></p>
+                <div class="carousel-item">
+                    <div class="card text-white bg-dark obj">
+                        <div class="card-body">
+                            <div style="padding-top: 2%;">
+                                <span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span><span class="material-icons md-light">
+                                    star
+                                </span>
+                            </div>
+                            <p class="card-text" style="padding-top: 2%; font-weight: 300;">"Elisha was wonderful to
+                                work with. I had a
+                                tight
+                                deadline for a campaign
+                                and she was able to communicate and deliver the project immediately. I look forward to
+                                working with her again in the future."</p>
+                            <div class="card-footer">
+                                <p class="card-text"><small class="text-muted">- Rebecca Busch</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,9 +242,11 @@
                     <h2 class="display-5" style="font-weight: 600;">Have a project?</h4>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-primary xl" href="mailto:ullithtaiyn@gmail.com">Get in touch</button>        </div>
+                    <button type="button" class="btn btn-primary xl" href="mailto:ullithtaiyn@gmail.com">Get in
+                        touch</button>
                 </div>
             </div>
+        </div>
     </footer>
 
     <div class="container-fluid container-padding" id="topRightFixed">
@@ -347,33 +342,33 @@
             // INJECT CSS
             var css = document.createElement("style");
             css.type = "text/css";
-            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.06em solid #6600ff; height:8px; }";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.06em solid #3c50ff; height:7px; }";
             document.body.appendChild(css);
         };
     </script>
 
-    <script>
+    <!--<script>
         $(document).ready(function () {
             $(window).scroll(function () {
                 if ($(window).scrollTop() > 520) {
                     $("#navlink").css({
-                        "background-color": "white", "color": "drop-shadow(26px 26px 10px black)"
+                        "background-color": "#fffcfcc3", "color": "drop-shadow(26px 26px 10px black)"
                     });
                     $("#logo-img").css({
                         "source": "/Asset/eu_white_logo"
                     });
                 }
                 else {
-                    $("#navlink").css({ "background-color": "transparent" });
+                    $("#navlink").css({ "background-color": "#fffcfcc3" });
                 }
 
             })
         })
-    </script>
+    </script>-->
 
     <script>
-        $('.carousel .carousel-item').each(function () {
-            var minPerSlide = 4;
+        $('.carousel .carousel-items').each(function () {
+            var minPerSlide = 2;
             var next = $(this).next();
             if (!next.length) {
                 next = $(this).siblings(':first');

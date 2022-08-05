@@ -2,7 +2,7 @@
     --dark: #0a0a0a;
     --accent: #F06553;
     --light: #ffffff;
-    --purple: #6600ff;
+    --purple: #214ED3;
     --accent2: #731bf6e0;
 
 }
@@ -11,7 +11,7 @@ body {
     font-family: 'Lato', serif !important;
     font-style: normal;
     font-weight: 500;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     color: #0a0a0a !important;
 }
 
@@ -27,7 +27,7 @@ body {
 .dark-div {
     padding-left: 9%;
     padding-right: 9%;
-    background-color: #6600ff;
+    background-color: #1965e0;
     color: #f1f1f1;
 }
 
@@ -39,8 +39,8 @@ body {
 }
 
 .div-space {
-    padding-bottom: 10%;
-    padding-top: 10%;
+    padding-bottom: 6%;
+    padding-top: 8%;
 }
 
 .div-footer {
@@ -50,40 +50,10 @@ body {
 
 .blue {
     background-color: var(--purple) !important;
-    color: #6600ff;
+    color: #3c50ff;
 }
 
-a.effect-underline:after {
-    content: '';
-    display: block;
-    width: 0%;
-    max-width: 70px;
-    height: 3px;
-    background-color: var(--purple);
-    transition: width .3s;
-}
-
-a.effect-underline:hover:after {
-    width: 100%;
-    max-width: 70px;
-    transition: width .3s;
-}
-
-.effect-underline:after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 3px;
-    background-color: var(--purple);
-    transition: width .3s;
-}
-
-.effect-underline:hover:after {
-    width: 100%;
-    transition: width .3s;
-}
-
-.minion {
+.minion{
     font-family: minionpro-condensed-caption, serif;
     font-style: normal;
     font-weight: 500;
@@ -117,14 +87,14 @@ a.effect-underline:hover:after {
 }
 
 .elisha {
-    font-size: 1000;
+    font-size: 90px;
     font-weight: 600;
-    color: #6600ff !important;
+    color: #3c50ff !important;
     font-family: 'Lato', sans-serif;
 }
 
 #button {
-    background-color: #6600ff !important;
+    background-color: #3c50ff !important;
     border: 50px !important;
 }
 
@@ -139,6 +109,15 @@ a.effect-underline:hover:after {
 .card-img-top {
     width: 100%;
     object-fit: cover;
+}
+
+.card-carousel{
+    size: 200px !important;
+}
+
+.card-body{
+    border: none;
+
 }
 
 .center {
@@ -175,7 +154,7 @@ a.effect-underline:hover:after {
 
 .b {
     border-style: solid !important;
-    border-color: #6600ff !important;
+    border-color: #3c50ff !important;
 }
 
 .align {
@@ -257,29 +236,46 @@ a.effect-underline:hover:after {
 
 .btn-outline-primary:active {
     background-color: #fff !important;
-    color: #6600ff !important;
-    border-color: #6600ff !important;
+    color: #3c50ff !important;
+    border-color: #3c50ff !important;
+    border-radius: 35px;
 }
 
 .btn-outline-primary:hover {
-    background-color: #6600ff !important;
-    border-color: #6600ff !important;
+    background-color: #1965e0 !important;
+    border-color: #1965e0 !important;
+    border-radius: 35px;
+}
+
+.container-fluid {
+    padding-left: 6%;
+    padding-right: 4% !important;
 }
 
 .nav-link {
-    color: black;
+    color: black !important;
+    margin-right: 20px !important;
+}
+
+.nav-link:hover {
+    color: #1965e0 !important;
+}
+
+.navbar{
+    background-color: white !important;
 }
 
 .btn-sm {
     color: black;
+    border-radius: 35px;
 }
 
 .active {
-    color: #6600ff !important;
+    color: #3c50ff !important;
 }
 
 ion-icon {
-    color: #6600ff;
+    color: #1965e0;
 }
 
 
@@ -329,32 +325,51 @@ ion-icon {
     width: 50px;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     background-color: #0f071b7a;
     border-color: none;
     border-radius: 100%;
-    height: 50px;
-    width: 50px;
+    height: auto;
+    width: auto;
     align-self: center;
 }
 
+.btn-nav{
+    background-color: transparent !important;
+    color: black !important;
+    border-color: #3c50ff !important;
+    border-width: 2px;
+    border-radius: 35px;
+    width: 110px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.btn-nav:hover {
+    background-color: #3c50ff !important;
+    border-color: #3c50ff !important;
+    color: white !important;
+}
+
 .btn-primary {
-    background-color: #6600ff;
-    border-color: #6600ff !important;
+    background-color: #3c50ff;
+    border-color: #3c50ff !important;
+    border-radius: 35px;
 }
 
 .btn-primary-s {
     background-color: #f0655300 !important;
     border-color: #f0655300 !important;
+    border-radius: 30px;
 }
 
 .btn-primary:hover {
-    background-color: #4B00C5;
-    border-color: #4B00C5 !important;
+    background-color: #3b4deb;
+    border-color: #3b4deb !important;
 }
 
 .btn-primary-s:hover {
-    color: #4B00C5;
+    color: #3b4deb;
 }
 
 .demo {
@@ -364,13 +379,18 @@ ion-icon {
     background-position: 0 0, 100px 100px;
 }
 
+.gradient {
+    background: rgb(102, 0, 255);
+    background: linear-gradient(180deg, rgba(102, 0, 255, 1) 36%, rgba(178, 129, 253, 1) 65%, rgba(251, 251, 251, 1) 88%);
+}
+
 .material-icons.md-dark {
     color: rgb(0, 0, 0);
     vertical-align: middle;
 }
 
 .material-icons.md-dark:hover {
-    color: #4B00C5;
+    color: #3b4deb;
 }
 
 .material-icons.md-dark.md-inactive {
@@ -385,20 +405,25 @@ ion-icon {
     transform: translateY(-10px);
 }
 
+.btn-outline-secondary{
+    border-radius: 35px !important;
+}
+
 .btn-outline-secondary:hover {
     color: white;
-    border-color: #4B00C5;
-    background-color: #4B00C5 !important;
+    border-color: #3b4deb;
+    background-color: #3b4deb !important;
 }
 
 .btn-outline-white {
     border-color: white;
     color: white;
+    border-radius: 35px !important;
 }
 
 .btn-outline-white:hover {
     border-color: white;
-    color: #6600ff;
+    color: #3b4deb;
     background-color: white;
 }
 
@@ -408,47 +433,63 @@ ion-icon {
 }
 
 @media (max-width: 768px) {
-    .carousel-inner .carousel-item>div {
-        display: none;
+    .carousel-inner .carousel-items > div {
+      display: none;
+    }
+    .carousel-inner .carousel-items > div:first-child {
+      display: block;
     }
 
-    .carousel-inner .carousel-item>div:first-child {
-        display: block;
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .elisha{
+        font-size: 55px;
+    }
+
+    .home-screen{
+        padding-bottom: 20% !important; 
+        padding-top: 40% !important; 
     }
 }
+  
+.home-screen{
+    padding-bottom: 10%; padding-top: 16%; min-width: 500px;
+}
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-start,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+  .carousel-inner .carousel-items.active,
+  .carousel-inner .carousel-items-start,
+  .carousel-inner .carousel-items-next,
+  .carousel-inner .carousel-items-prev {
     display: flex;
-    transition-duration: 0.5s;
-}
-
-/* display 4 */
-@media (min-width: 768px) {
-
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-item-next:not(.carousel-item-start) {
-        transform: translateX(25%) !important;
+    transition-duration: 10s;
+  }
+  
+  /* display 4 */
+  @media (min-width: 768px) {
+    .carousel-inner .carousel-items-right.active,
+    .carousel-inner .carousel-items-next,
+    .carousel-items-next:not(.carousel-items-start) {
+      transform: translateX(25%) !important;
     }
-
+  
     .carousel-inner .carousel-item-left.active,
-    .carousel-item-prev:not(.carousel-item-end),
-    .active.carousel-item-start,
-    .carousel-item-prev:not(.carousel-item-end) {
-        transform: translateX(-25%) !important;
+    .carousel-items-prev:not(.carousel-items-end),
+    .active.carousel-items-start,
+    .carousel-items-prev:not(.carousel-items-end) {
+      transform: translateX(-25%) !important;
     }
-
-    .carousel-item-next.carousel-item-start,
-    .active.carousel-item-end {
-        transform: translateX(0) !important;
+  
+    .carousel-items-next.carousel-items-start, .active.carousel-items-end {
+      transform: translateX(0) !important;
     }
-
-    .carousel-inner .carousel-item-prev,
-    .carousel-item-prev:not(.carousel-item-end) {
-        transform: translateX(-25%) !important;
+  
+    .carousel-inner .carousel-items-prev,
+    .carousel-items-prev:not(.carousel-items-end) {
+      transform: translateX(-25%) !important;
     }
-}
-
+  }
