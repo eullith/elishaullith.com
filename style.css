@@ -470,10 +470,7 @@ ion-icon {
     }
 
     #topRightFixed{
-        position: fixed;
-        top: 90%;
-        left: 92%;
-        padding: 5px;
+        visibility: hidden !important;
     }
     
 }
