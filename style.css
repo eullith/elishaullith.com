@@ -465,19 +465,32 @@ ion-icon {
         padding-right: 6% !important;
     }
 
-    .home-screen-button{
-        padding-top:6% !important;
+    .home-screen-button {
+        padding-top: 6% !important;
     }
 
-    #topRightFixed{
+    #topRightFixed {
         visibility: hidden !important;
     }
-    
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .asset-home-screen {
+        padding-bottom: 10%;
+        padding-top: 5% !important;
+    }
 }
 
 .home-screen {
     padding-bottom: 10%;
-    padding-top: 16%;
+    padding-top: 20%;
     min-width: 500px;
 }
 
@@ -487,8 +500,13 @@ ion-icon {
     font-weight: 400;
 }
 
-.home-screen-button{
-    padding-top:3%;
+.home-screen-button {
+    padding-top: 3%;
+}
+
+.asset-home-screen {
+    padding-bottom: 10%;
+    padding-top: 10%;
 }
 
 .carousel-inner .carousel-items.active,
