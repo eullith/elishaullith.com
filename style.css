@@ -495,8 +495,12 @@ ion-icon {
     }
 
     .asset-home-screen {
-        padding-bottom: 10% !important;
+        padding-bottom: 20% !important;
         padding-top: 6% !important;
+    }
+
+    .marquee_text{
+        font-size: 40px !important;
     }
 }
 
@@ -543,8 +547,11 @@ ion-icon {
 }
 
 .marquee span {
-    font-size: 5vw;
     padding: 0 0vw;
+}
+
+.marquee_text{
+    font-size: 70px;
 }
 
 @keyframes marquee {
