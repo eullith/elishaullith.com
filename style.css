@@ -443,6 +443,18 @@ ion-icon {
 
 }
 
+@media (min-width: 1680px) {
+    .img-fluid {
+        width: 9250000px !important;
+    }
+
+    .asset-home-screen {
+        padding-bottom: 10% !important;
+        padding-top: 5% !important;
+        padding-right: 8%;
+    }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .elisha {
@@ -483,8 +495,8 @@ ion-icon {
     }
 
     .asset-home-screen {
-        padding-bottom: 10%;
-        padding-top: 5% !important;
+        padding-bottom: 10% !important;
+        padding-top: 6% !important;
     }
 }
 
@@ -506,8 +518,46 @@ ion-icon {
 
 .asset-home-screen {
     padding-bottom: 10%;
-    padding-top: 10%;
+    padding-top: 6%;
 }
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 2px;
+    white-space: nowrap;
+    align-items: center;
+    --move-initial: calc(-41% + var(--offset));
+    --move-final: calc(-49% + var(--offset));
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 20s linear infinite reverse;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #1965e0;
+    color: white;
+}
+
+.marquee span {
+    font-size: 5vw;
+    padding: 0 0vw;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+
 
 .carousel-inner .carousel-items.active,
 .carousel-inner .carousel-items-start,
