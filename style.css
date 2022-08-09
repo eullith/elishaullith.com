@@ -538,7 +538,7 @@ ion-icon {
     }
 
     .x-space{
-        margin: 0px -1px !important;
+        
         justify-content: baseline;
     }
 }
@@ -838,7 +838,7 @@ ion-icon {
 
 .owl-1 .owl-nav .owl-next {
     border: 4px solid blue;
-    right: 20px;
+    right: 10px;
 }
 
 .owl-1 .owl-nav .owl-prev {
@@ -847,7 +847,7 @@ ion-icon {
 
 .owl-1 .owl-dots {
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
