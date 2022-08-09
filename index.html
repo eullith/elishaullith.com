@@ -15,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -25,6 +27,7 @@
     <link href="/style.css" rel="stylesheet">
 
     <title>Home</title>
+
 </head>
 
 <body>
@@ -69,7 +72,7 @@
                 <br>
             </div>
             <div class="col asset-home-screen">
-                <img src="/Assets/main-asset-royal-blue.svg" class="img-fluid" alt="..." style="width: 550px;">
+                <img src="/Assets/main-asset-royal-blue.svg" class="img-fluid img-size" alt="...">
             </div>
         </div>
     </div>
@@ -105,50 +108,38 @@
         </div>
     </div>
 
-    <div class="container-fluid div-space" id="laptop-bkc">
-        <div class="row">
-            <div class="col-8 gx-5">
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/Assets/Anxiety - 1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/Assets/gob1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/Assets/Anxiety - 1.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+    <div class="container-fluid mywork-space">
+        <h2 class="text-space">Elisha is an experienced eLearning Developer
+            with a
+            <span class="description">passion</span>
+            for developing <span class="description">fun</span>, <span class="description">interactive</span> and <span
+                class="description">engaging</span> eLearning courses.
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card obj">
+                    <img src="/Assets/gob1.png" class="card-img-top" alt="...">
                 </div>
             </div>
-
-            <div class="col-4">
-                <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">Explore my work</h1>
-                <h5 class="experience-text">Elisha is an experienced eLearning Developer
-                    with a
-                    passion
-                    for developing fun, interactive and engaging eLearning courses.
-                    <br>
-
-                </h5>
+            <div class="col">
+                <div class="card obj">
+                    <img src="/Assets/Anxiety - 1.png" class="card-img-top" alt="...">
+                </div>
             </div>
-
+            <div class="col">
+                <div class="card obj">
+                    <img src="/Assets/Earth Day Portfolio.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card obj">
+                    <img src="/Assets/Earth Day Portfolio.png" class="card-img-top" alt="...">
+                </div>
+            </div>
         </div>
-
     </div>
 
-    <div class="container-fluid black-div div-space" id="startchange">
+    <div class="container-fluid black-div space-div" id="startchange">
         <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">What can I do
             for you?</h1>
         <br>
@@ -194,107 +185,49 @@
         </div>
     </div>
 
-    <div class="container-fluid container-padding div-space" id="heading">
-        <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%;">What people say?</h1>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <div class="container-fluid div-space">
+        <div class="row x-space">
+            <div class="col review-position">
+                <img src="/Assets/Reviews.svg" class="img-fluid review-asset" alt="...">
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="card text-white bg-dark obj">
-                        <div class="card-bodyn d-block w-100">
-                            <div style="padding-top: 2%;">
-                                <span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span>
-                            </div>
-                            <p class="card-text" style="font-weight: 300; padding-top: 2%;">"Highly qualified freelance.
+            <div class="col-7 review">
+                <h1 class="display-5" style="font-weight: 600; padding-bottom: 30px;">What people say?</h1>
+                <div class="container">
+                    <div class="owl-carousel owl-1">
+                        <blockquote class="testimony-29101">
+                            <p>"Highly qualified
+                                freelance.
                                 She
                                 delivers the work on
                                 time and with good
-                                results and is always attentive to feedback to make modifications to the work. Highly
-                                recommended if you need a professional expert in Articulate Storyline and instructional
+                                results and is always attentive to feedback to make modifications to the work.
+                                Highly
+                                recommended if you need a professional expert in Articulate Storyline and
+                                instructional
                                 design."</p>
-                            <div class="card-footer">
-                                <p class="card-text"><small class="text-muted">Maria Baeta Ramon, Digital
-                                        Preventor</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div class="card text-white bg-dark obj">
-                        <div class="card-body">
-                            <div style="padding-top: 2%;">
-                                <span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span>
-                            </div>
-                            <p class="card-text" style="padding-top: 2%; font-weight: 300;">"Elisha was a pleasure to
+                            <p class="author"><cite>&mdash; Maria Baeta</cite></p>
+                        </blockquote>
+                        <blockquote class="testimony-29101">
+                            <p>"Elisha was a
+                                pleasure to
                                 work with and is an
-                                excellent communicator. Elisha delivered the Storyline content in an engaging way and
+                                excellent communicator. Elisha delivered the Storyline content in an engaging
+                                way and
                                 was able
                                 to work with tight timelines. I look forward to working with her again."</p>
-                            <div class="card-footer">
-                                <p class="card-text"><small class="text-muted">- Kate Langley</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card text-white bg-dark obj">
-                        <div class="card-body">
-                            <div style="padding-top: 2%;">
-                                <span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span><span class="material-icons md-light">
-                                    star
-                                </span>
-                            </div>
-                            <p class="card-text" style="padding-top: 2%; font-weight: 300;">"Elisha was wonderful to
+                            <p class="author"><cite>&mdash; Kate Langley</cite></p>
+                        </blockquote>
+                        <blockquote class="testimony-29101">
+                            <p>"Elisha was
+                                wonderful to
                                 work with. I had a
                                 tight
                                 deadline for a campaign
-                                and she was able to communicate and deliver the project immediately. I look forward to
+                                and she was able to communicate and deliver the project immediately. I look
+                                forward to
                                 working with her again in the future."</p>
-                            <div class="card-footer">
-                                <p class="card-text"><small class="text-muted">- Rebecca Busch</small></p>
-                            </div>
-                        </div>
+                            <p class="author"><cite>&mdash; Rebecca Busch</cite></p>
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -479,6 +412,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     -->
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
