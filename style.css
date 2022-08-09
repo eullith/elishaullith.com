@@ -267,8 +267,8 @@ body {
 }
 
 .container-fluid {
-    padding-left: 6%;
-    padding-right: 4% !important;
+    padding-left: 5%;
+    padding-right: 5% !important;
 }
 
 .nav-link {
@@ -451,17 +451,6 @@ ion-icon {
     height: 42px;
 }
 
-@media (max-width: 768px) {
-    .carousel-inner .carousel-items>div {
-        display: none;
-    }
-
-    .carousel-inner .carousel-items>div:first-child {
-        display: block;
-    }
-
-}
-
 @media (min-width: 1680px) {
     .img-fluid {
         width: 9250000px !important;
@@ -548,7 +537,7 @@ ion-icon {
     .owl-1 .owl-dots {
         position: absolute;
         bottom: -30px !important;
-        left: 43% !important;
+        left: 50% !important;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -600,7 +589,7 @@ ion-icon {
 .owl-carousel,
 .owl-carousel .owl-item {
     -webkit-tap-highlight-color: transparent;
-    position: relative
+    position: relative;
 }
 
 .owl-carousel {
@@ -859,7 +848,7 @@ ion-icon {
 
 .owl-1 .owl-nav .owl-next {
     border: 4px solid blue;
-    right: 10px;
+    right: 20px;
 }
 
 .owl-1 .owl-nav .owl-prev {
@@ -899,7 +888,7 @@ ion-icon {
 }
 
 blockquote.testimony-29101 {
-    max-width: 799px;
+    max-width: 899px;
     margin: 0 0;
 }
 
