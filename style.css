@@ -537,7 +537,7 @@ ion-icon {
     .owl-1 .owl-dots {
         position: absolute;
         bottom: -30px !important;
-        left: 50% !important;
+        left: 42% !important;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -585,6 +585,7 @@ ion-icon {
     margin-right: auto;
     margin-left: auto
 }
+
 
 .owl-carousel,
 .owl-carousel .owl-item {
