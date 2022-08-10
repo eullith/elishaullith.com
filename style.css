@@ -24,18 +24,19 @@ body {
     padding-right: 9%;
 }
 
-.dark-div {
+.black-div {
     padding-left: 9%;
     padding-right: 9%;
     background-color: #1965e0;
+    color: #f1f1f1;
+    background-color: black;
     color: #f1f1f1;
 }
 
 .black-div {
     padding-left: 9%;
     padding-right: 9%;
-    background-color: black;
-    color: #f1f1f1;
+    
 }
 
 .div-space {
@@ -49,8 +50,10 @@ body {
 }
 
 .div-footer {
-    padding-bottom: 6%;
+    padding-bottom: 3%;
     padding-top: 10%;
+    background-color: black;
+    color: #f1f1f1;
 }
 
 .blue {
@@ -967,4 +970,34 @@ blockquote.testimony-29101 .author cite {
 .review-asset {
     max-width: 500px !important;
     min-width: 300px !important;
+}
+
+.bebas {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.contact-text {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1%;
+    font-weight: 600;
+}
+
+.contact-text:hover {
+    color: #1965e0;
+}
+
+.footer-text {
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+
+.contact-icons {
+    padding-top: 10%;
+    width: 150px;
+}
+
+.arrow{
+    font-size: 150px;
+    display: inline;
 }
