@@ -457,11 +457,6 @@ ion-icon {
     height: 42px;
 }
 
-.col-5-form {
-    flex: 0 0 auto;
-    width: 41.66666667%;
-}
-
 @media (min-width: 1680px) {
     .img-fluid {
         width: 9250000px !important;
@@ -559,13 +554,9 @@ ion-icon {
         transform: translateX(-50%);
     }
 
-    .col-5-form {
-        flex: 0 0 auto;
-        width: 100%;
-        padding-top: 5% !important;
-    }
 }
 
+/*for ipad view*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
     .elisha {
@@ -1035,5 +1026,4 @@ blockquote.testimony-29101 .author cite {
 .contact-screen {
     padding-bottom: 10%;
     padding-top: 15%;
-    min-width: 500px;
 }
