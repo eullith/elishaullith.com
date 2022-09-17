@@ -486,6 +486,11 @@ ion-icon {
         padding-top: 50% !important;
     }
 
+    .contact-screen {
+        padding-bottom: 20% !important;
+        padding-top: 30% !important;
+    }
+
     .experience-text {
         max-width: 100% !important;
         padding-bottom: 4% !important;
@@ -556,7 +561,8 @@ ion-icon {
 
     .col-5-form {
         flex: 0 0 auto;
-        width: 100%;
+        width: 75%;
+        padding-top: 5% !important;
     }
 }
 
