@@ -36,7 +36,7 @@ body {
 .black-div {
     padding-left: 9%;
     padding-right: 9%;
-    
+
 }
 
 .div-space {
@@ -285,6 +285,9 @@ body {
 
 .navbar {
     background-color: white !important;
+    box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.031);
+    /*-webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;*/
 }
 
 .btn-sm {
@@ -454,6 +457,11 @@ ion-icon {
     height: 42px;
 }
 
+.col-5-form {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
 @media (min-width: 1680px) {
     .img-fluid {
         width: 9250000px !important;
@@ -546,6 +554,10 @@ ion-icon {
         transform: translateX(-50%);
     }
 
+    .col-5-form {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -894,6 +906,9 @@ ion-icon {
 blockquote.testimony-29101 {
     max-width: 899px;
     margin: 0 0;
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 
 blockquote.testimony-29101 p {
@@ -935,7 +950,7 @@ blockquote.testimony-29101 .author cite {
     display: flex;
     position: relative;
     transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 20s linear infinite reverse;
+    animation: marquee 20s linear infinite alternate-reverse;
     font-family: 'Bebas Neue', cursive;
     background-color: #1965e0;
     color: white;
@@ -983,9 +998,9 @@ blockquote.testimony-29101 .author cite {
     font-weight: 600;
 }
 
-.contact-text:hover {
+/*.contact-text:hover {
     color: #1965e0;
-}
+}*/
 
 .footer-text {
     font-weight: 600;
@@ -997,7 +1012,22 @@ blockquote.testimony-29101 .author cite {
     width: 150px;
 }
 
-.arrow{
+.arrow {
     font-size: 150px;
     display: inline;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.contact-screen {
+    padding-bottom: 10%;
+    padding-top: 15%;
+    min-width: 500px;
 }

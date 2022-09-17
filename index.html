@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -30,11 +32,11 @@
 
 </head>
 
-<body>
+<body class="prevent-select">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navlink">
             <div class="container-fluid" style="padding-top: 0.5%;">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="/Assets/logo_eu.svg" alt="logo" width="auto" height="35" id="logo-img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +47,7 @@
                         <a class="nav-link" aria-current="page" href="#">Works</a>
                         <a class="nav-link" href="#startchange">Services</a>
                         <a class="nav-link" href="#">About</a>
-                        <a class="nav-link btn btn-nav" href="#">Contact</a>
+                        <a class="nav-link btn btn-nav" href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +136,7 @@
                 </div>
                 <div class="col">
                     <div class="card obj">
-                        <img src="/Assets/Earth Day Portfolio.png" class="card-img-top" alt="...">
+                        <img src="/Assets/Cultura y Desarrollo Organizacional.png" class="card-img-top" alt="...">
                     </div>
                 </div>
             </div>
@@ -239,30 +241,43 @@
     <footer>
         <div class="container-fluid div-footer">
             <div class="row">
-                <div class="col-8">
+                <div class="col-7 my-auto">
                     <h5 class="footer-text">Have a project in mind?</h5>
-                    <a class="contact-text" href="mailto:ullithtaiyn@gmail.com">
-                        <h1 class="display-1 contact-text">Get in touch</h1>
-                    </a>
+                    <!--<a class="contact-text" href="mailto:ullithtaiyn@gmail.com">
+                    </a>-->
+                    <h1 class="display-1 contact-text">Get in touch</h1>
                 </div>
-                <div class="col">
-                    <h2 class="bebas">Connect</h2>
-                    <a class="contact-text" href="https://www.linkedin.com/in/elisha-ullith-4a65511b2/">
-                        <h5>Linkedin</h5>
-                    </a>
-                    <a class="contact-text" href="https://www.upwork.com/freelancers/~010cd29b376b9ae088">
-                        <h5>Upwork</h5>
-                    </a>
-                    <a class="contact-text" href="https://www.instagram.com/elishaullith/">
-                        <h5>Instagram</h5>
-                    </a>
-                </div>
-            </div>
             <div style="padding-bottom: 2%;">
                 <hr>
             </div>
             <div>
-                <h6>© 2022 brought to you by <span>Elisha Ullith</span></h6>
+                <div class="row">
+                    <div class="col">
+                        <h5>© 2022 brought to you by <span>Elisha Ullith</span></h6>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-end mx-auto">
+                            <div class="col-2">
+                                <a class="contact-text" href="https://www.linkedin.com/in/elisha-ullith-4a65511b2/"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <h5>Linkedin</h5>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <a class="contact-text" href="https://www.upwork.com/freelancers/~010cd29b376b9ae088"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <h5>Upwork</h5>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <a class="contact-text" href="https://www.instagram.com/elishaullith/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <h5>Instagram</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
