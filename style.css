@@ -115,7 +115,20 @@ body {
     border-style: none;
     background-color: transparent;
     height: auto;
+    border-width: 2px;
     min-height: 150px;
+    text-align: center;
+}
+
+.card-s {
+    padding: 2%;
+    border-style: solid;
+    background-color: none;
+    height: auto;
+    border-width: 2px;
+    min-height: 150px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .description {
@@ -131,6 +144,19 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 15px !important;
+}
+
+.card-img-t {
+    width: 40%;
+    object-fit: cover;
+    align-self: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section-text{
+    font-family: 'Bebas Neue', cursive;
+    color: #1965e0 !important;
 }
 
 .card-carousel {
@@ -190,7 +216,10 @@ body {
 .card-title {
     font-weight: 500;
     font-size: 30px;
-    color: white;
+}
+
+.card-text{
+    font-size: 20px;
 }
 
 .bg-light {
@@ -470,7 +499,7 @@ ion-icon {
 }
 
 /*Responsive adjustments for mobile view*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
 
     .elisha {
         font-size: 55px;
@@ -552,12 +581,36 @@ ion-icon {
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
+    }   
+
+    .col-footer{
+        flex: 0 0 auto;
+        min-width: 50% !important;
+        padding-bottom:5% !important;
     }
+
+    .col-text-footer{
+        flex: 0 0 auto;
+        min-width: 100% !important;
+        padding-right: 0px !important;
+        padding-bottom: 5% !important;
+    }
+}
+
+.col-footer{
+    flex: 0 0 auto;
+    width: 35%;
+}
+
+.col-text-footer{
+    flex: 0 0 auto;
+    width: 60%;
+    padding-right: 300px;
 
 }
 
 /*for ipad view*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 900px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
     .elisha {
         font-size: 55px;
@@ -571,7 +624,7 @@ ion-icon {
 
 .home-screen {
     padding-bottom: 10%;
-    padding-top: 20%;
+    padding-top: 12%;
     min-width: 500px;
 }
 
@@ -901,7 +954,7 @@ ion-icon {
 }
 
 blockquote.testimony-29101 {
-    max-width: 899px;
+    max-width: 100%;
     margin: 0 0;
     margin-left: 5%;
     margin-right: 5%;
@@ -929,7 +982,7 @@ blockquote.testimony-29101 .author cite {
 
 .asset-home-screen {
     padding-bottom: 10%;
-    padding-top: 6%;
+    padding-top: 0.5%;
 }
 
 .marquee {
@@ -1025,7 +1078,7 @@ blockquote.testimony-29101 .author cite {
 
 .contact-screen {
     padding-bottom: 10%;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .screen-darken{
