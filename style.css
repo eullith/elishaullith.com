@@ -58,7 +58,7 @@ body {
 
 .blue {
     background-color: var(--purple) !important;
-    color: #3c50ff;
+    color: #f1f1f1;
 }
 
 .minion {
@@ -314,7 +314,7 @@ body {
 
 .navbar {
     background-color: white !important;
-    box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.031);
+    
     /*-webkit-backdrop-filter: blur(8px) !important;
     backdrop-filter: blur(8px) !important;*/
 }
