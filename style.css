@@ -2,8 +2,8 @@
     --dark: #0a0a0a;
     --accent: #F06553;
     --light: #ffffff;
-    --purple: #214ED3;
-    --accent2: #731bf6e0;
+    --purple: #3C50FF;
+    --accent2: #214ed3;
 
 }
 
@@ -13,6 +13,7 @@ body {
     font-weight: 500;
     background-color: #ffffff;
     color: #0a0a0a !important;
+    position: relative;
 }
 
 .material-icons {
@@ -27,7 +28,7 @@ body {
 .black-div {
     padding-left: 9%;
     padding-right: 9%;
-    background-color: #1965e0;
+    background-color: #3C50FF;
     color: #f1f1f1;
     background-color: black;
     color: #f1f1f1;
@@ -58,7 +59,16 @@ body {
 
 .blue {
     background-color: var(--purple) !important;
-    color: #f1f1f1;
+    background: url(/Assets/Icons/eu-icon-pack-06.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: 100% 70%;
+    position: fixed;
+    z-index: -1;
 }
 
 .minion {
@@ -97,12 +107,12 @@ body {
 .elisha {
     font-size: 90px;
     font-weight: 600;
-    color: #3c50ff !important;
+    color: #3C50FF !important;
     font-family: 'Lato', sans-serif;
 }
 
 #button {
-    background-color: #3c50ff !important;
+    background-color: #3C50FF !important;
     border: 50px !important;
 }
 
@@ -112,27 +122,30 @@ body {
 
 .card-x {
     padding: 2%;
-    border-style: none;
-    background-color: transparent;
+    border-style: solid;
+    background-color: none;
     height: auto;
+    border: none;
     border-width: 2px;
+    border-color: #3b4deb !important;
     min-height: 150px;
     text-align: center;
 }
 
 .card-s {
     padding: 2%;
-    border-style: solid;
-    background-color: none;
+    border-style: none;
+    background-color: #bbcff927;
     height: auto;
     border-width: 2px;
     min-height: 150px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(var(--bs-body-color-rgb), 0.09) !important;
 }
 
 .description {
-    color: #1965e0;
+    color: #3C50FF;
     font-weight: bold;
 }
 
@@ -147,7 +160,7 @@ body {
 }
 
 .card-img-t {
-    width: 40%;
+    width: 60%;
     object-fit: cover;
     align-self: center;
     padding-top: 5%;
@@ -165,7 +178,6 @@ body {
 
 .card-body {
     border: none;
-
 }
 
 .center {
@@ -202,7 +214,7 @@ body {
 
 .b {
     border-style: solid !important;
-    border-color: #3c50ff !important;
+    border-color: #3C50FF !important;
 }
 
 .align {
@@ -215,11 +227,14 @@ body {
 
 .card-title {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
+    color: #f1f1f1;
+    justify-self: left;
 }
 
 .card-text{
     font-size: 20px;
+    color: #f1f1f1;
 }
 
 .bg-light {
@@ -254,47 +269,30 @@ body {
     height: 100%;
 }
 
-
-/* width */
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 13px;
-}
-
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 13px;
-}
-
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    border-radius: 13px;
-}
-
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #0f071b7a;
+  }
 .btn-outline-primary:active {
     background-color: #fff !important;
-    color: #3c50ff !important;
-    border-color: #3c50ff !important;
+    color: #3C50FF !important;
+    border-color: #3C50FF !important;
     border-radius: 35px;
 }
 
 .btn-outline-primary:hover {
-    background-color: #1965e0 !important;
-    border-color: #1965e0 !important;
+    background-color: #3C50FF !important;
+    border-color: #3C50FF !important;
     border-radius: 35px;
 }
 
@@ -309,11 +307,11 @@ body {
 }
 
 .nav-link:hover {
-    color: #1965e0 !important;
+    color: #3C50FF !important;
 }
 
 .navbar {
-    background-color: white !important;
+    background-color: #ffffff !important;
     
     /*-webkit-backdrop-filter: blur(8px) !important;
     backdrop-filter: blur(8px) !important;*/
@@ -325,11 +323,11 @@ body {
 }
 
 .active {
-    color: #3c50ff !important;
+    color: #3C50FF !important;
 }
 
 ion-icon {
-    color: #1965e0;
+    color: #3C50FF;
 }
 
 
@@ -391,7 +389,7 @@ ion-icon {
 .btn-nav {
     background-color: transparent !important;
     color: black !important;
-    border-color: #3c50ff !important;
+    border-color: #3C50FF !important;
     border-width: 2px;
     border-radius: 35px;
     width: 110px;
@@ -400,19 +398,27 @@ ion-icon {
 }
 
 .btn-nav:hover {
-    background-color: #3c50ff !important;
-    border-color: #3c50ff !important;
+    background-color: #3C50FF !important;
+    border-color: #3C50FF !important;
     color: white !important;
 }
 
 .btn-primary {
-    background-color: #3c50ff;
-    border-color: #3c50ff !important;
+    background-color: #3C50FF;
+    border-color: #3C50FF !important;
     border-radius: 35px;
 }
 
 .btn-primary-s {
-    background-color: #f0655300 !important;
+    background-color: #ffffff !important;
+    color: #000;
+    border-color: #f0655300 !important;
+    border-radius: 30px;
+}
+
+.btn-primary-cta {
+    background-color: #ffffff !important;
+    color: #000;
     border-color: #f0655300 !important;
     border-radius: 30px;
 }
@@ -423,7 +429,13 @@ ion-icon {
 }
 
 .btn-primary-s:hover {
-    color: #3b4deb;
+    color: #3b4deb !important;
+    background-color: none !important;
+}
+
+.btn-primary-cta:hover {
+    color: #000;
+    background-color: #e6e6e6 !important;
 }
 
 .demo {
@@ -482,8 +494,8 @@ ion-icon {
 }
 
 .xl {
-    width: 130px;
-    height: 42px;
+    width: 20%;
+    height: 45%px;
 }
 
 @media (min-width: 1680px) {
@@ -496,6 +508,10 @@ ion-icon {
         padding-top: 5% !important;
         padding-right: 8%;
     }
+
+    .h-70-{
+        height: 100% !important;
+      }
 }
 
 /*Responsive adjustments for mobile view*/
@@ -537,10 +553,10 @@ ion-icon {
     html,
     body {
         overflow-x: hidden;
+        overflow-y: scroll !important;
     }
 
     body {
-        position: relative
     }
 
     .asset-home-screen {
@@ -553,8 +569,8 @@ ion-icon {
     }
 
     .div-space {
-        padding-bottom: 25%;
-        padding-top: 30%;
+        padding-bottom: 15%;
+        padding-top: 15%;
     }
 
     .text-space {
@@ -595,6 +611,10 @@ ion-icon {
         padding-right: 0px !important;
         padding-bottom: 5% !important;
     }
+
+    .h-70{
+        height: 100% !important;
+      }
 }
 
 .col-footer{
@@ -610,7 +630,7 @@ ion-icon {
 }
 
 /*for ipad view*/
-@media only screen and (min-device-width: 900px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 900px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
 
     .elisha {
         font-size: 55px;
@@ -620,6 +640,15 @@ ion-icon {
         padding-bottom: 10%;
         padding-top: 100%;
     }
+
+    .div-space {
+        padding-bottom: 5% !important;
+        padding-top: 5% !important;
+    }
+
+    .h-70-{
+        height: 100%;
+      }
 }
 
 .home-screen {
@@ -707,6 +736,8 @@ ion-icon {
     display: block;
     width: 100%
 }
+
+
 
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
@@ -945,7 +976,7 @@ ion-icon {
 }
 
 .owl-1 .owl-dots .owl-dot.active>span {
-    background: #3c50ff;
+    background: #214ed3;
 }
 
 .owl-1 .owl-dots .owl-dot:active,
@@ -958,7 +989,6 @@ blockquote.testimony-29101 {
     margin: 0 0;
     margin-left: 5%;
     margin-right: 5%;
-
 }
 
 blockquote.testimony-29101 p {
@@ -1002,7 +1032,7 @@ blockquote.testimony-29101 .author cite {
     transform: translate3d(var(--move-initial), 0, 0);
     animation: marquee 20s linear infinite alternate-reverse;
     font-family: 'Bebas Neue', cursive;
-    background-color: #1965e0;
+    background-color: #3C50FF;
     color: white;
 }
 
@@ -1119,8 +1149,24 @@ blockquote.testimony-29101 .author cite {
     background-color: #fff;
     overflow: auto;
     white-space: nowrap;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity .4s ease
   }
-  
+
+  .scrollcards.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+    transition: opacity .4s ease
+  }
+  .scrollcards.dragging img{
+    pointer-events: none;
+  }
+
   ::-webkit-scrollbar {
       width: 0px;
       height: 0px;
@@ -1134,4 +1180,16 @@ blockquote.testimony-29101 .author cite {
       height: auto; 
       width: 500px;
   }
-  
+
+  .col-services {
+    flex: 1 0 0%;
+  }
+
+  .h-70-{
+    height: 75%;
+  }
+
+.img-h{
+    height: 155px;
+    min-height: 70px;
+}
