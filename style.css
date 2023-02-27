@@ -57,17 +57,40 @@ body {
     color: #f1f1f1;
 }
 
+.mouse {
+    background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: 100%;
+    background-attachment: absolute;
+    background-position: 40% 80%;
+    z-index: -1;
+}
+
+.portfolio {
+    background: url(/Assets/Icons/eu-icon-pack-portfolio-10.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: 100%;
+    background-position: 0% 0%;
+    z-index: -1;
+}
+
+
 .blue {
     background-color: var(--purple) !important;
     background: url(/Assets/Icons/eu-icon-pack-06.svg);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     background-size: auto;
     background-attachment: fixed;
     background-position: 100% 70%;
-    position: fixed;
     z-index: -1;
 }
 
@@ -104,8 +127,21 @@ body {
     }
 }
 
+.p-text {
+    max-width: 55%;
+    padding-bottom: 4px;
+    line-height: 1.3;
+}
+
 .elisha {
     font-size: 90px;
+    font-weight: 600;
+    color: #3C50FF !important;
+    font-family: 'Lato', sans-serif;
+}
+
+.elisha-2 {
+    font-size: 50px;
     font-weight: 600;
     color: #3C50FF !important;
     font-family: 'Lato', sans-serif;
@@ -144,6 +180,36 @@ body {
     box-shadow: 0 1rem 3rem rgba(var(--bs-body-color-rgb), 0.09) !important;
 }
 
+.card-sidebar {
+    background-color: #bbcff943;
+    height: auto;
+    border-width: 2px;
+    min-height: 150px;
+    text-align: left;
+    color: #0a0a0a !important;
+    border-radius: 10px;
+}
+
+.card-sidebar:hover {
+    transform: none !important;
+}
+
+.card-pt {
+    padding-top: 4%;
+    background-color: none;
+    height: auto;
+    border-width: 2px;
+    min-height: 150px;
+    text-align: left;
+    color: #0a0a0a !important;
+    border-radius: 10px;
+    transition: .6s ease;
+}
+
+.card-pt:hover {
+    transform: scale(1.02);
+}
+
 .description {
     color: #3C50FF;
     font-weight: bold;
@@ -167,7 +233,7 @@ body {
     padding-bottom: 5%;
 }
 
-.section-text{
+.section-text {
     font-family: 'Bebas Neue', cursive;
     color: #1965e0 !important;
 }
@@ -232,7 +298,7 @@ body {
     justify-self: left;
 }
 
-.card-text{
+.card-text {
     font-size: 20px;
     color: #f1f1f1;
 }
@@ -273,16 +339,19 @@ body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
-  }
-  body::-webkit-scrollbar {
+}
+
+body::-webkit-scrollbar {
     width: 6px;
     background-color: #F5F5F5;
-  }
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #0f071b7a;
-  }
+}
+
 .btn-outline-primary:active {
     background-color: #fff !important;
     color: #3C50FF !important;
@@ -294,6 +363,17 @@ body::-webkit-scrollbar-track {
     background-color: #3C50FF !important;
     border-color: #3C50FF !important;
     border-radius: 35px;
+}
+
+.btn-primary-outline {
+    background-color: none !important;
+    color: #0b0b0be0 !important;
+    border-color: #3C50FF !important;
+    border-radius: 45px;
+    border-width: 2px;
+    font-size: 40px;
+    width: fit-content;
+    padding: 5px 40px;
 }
 
 .container-fluid {
@@ -310,11 +390,8 @@ body::-webkit-scrollbar-track {
     color: #3C50FF !important;
 }
 
-.navbar {
-    background-color: #ffffff !important;
-    
-    /*-webkit-backdrop-filter: blur(8px) !important;
-    backdrop-filter: blur(8px) !important;*/
+.nav {
+    background-color: #f1f1f1;
 }
 
 .btn-sm {
@@ -358,10 +435,6 @@ ion-icon {
     opacity: 0.9;
 }
 
-.scrolling-active {
-    background-color: #f1f1f1;
-}
-
 #topRightFixed {
     position: fixed;
     top: 90%;
@@ -396,6 +469,36 @@ ion-icon {
     padding-left: 100px;
     padding-right: 100px;
 }
+
+.portfolio-nav {
+    background-color: none !important;
+    border-color: none !important;
+    border-width: 2px;
+    border-radius: 35px;
+    width: 90px;
+    text-align: center;
+}
+
+.portfolio-nav:hover {
+    background-color: #3C50FF !important;
+    border-color: #3C50FF !important;
+    color: white !important;
+    border-width: 2px;
+    border-radius: 35px;
+    width: 90px;
+    text-align: center;
+}
+
+.active-pt {
+    background-color: #3C50FF !important;
+    border-color: #3C50FF !important;
+    color: white !important;
+    border-width: 2px;
+    border-radius: 35px;
+    width: 90px;
+    text-align: center;
+}
+
 
 .btn-nav:hover {
     background-color: #3C50FF !important;
@@ -509,9 +612,9 @@ ion-icon {
         padding-right: 8%;
     }
 
-    .h-70-{
+    .h-70- {
         height: 100% !important;
-      }
+    }
 }
 
 /*Responsive adjustments for mobile view*/
@@ -523,7 +626,7 @@ ion-icon {
 
     .home-screen {
         padding-bottom: 10% !important;
-        padding-top: 50% !important;
+        padding-top: 10% !important;
     }
 
     .contact-screen {
@@ -554,14 +657,6 @@ ion-icon {
     body {
         overflow-x: hidden;
         overflow-y: scroll !important;
-    }
-
-    body {
-    }
-
-    .asset-home-screen {
-        padding-bottom: 20% !important;
-        padding-top: 6% !important;
     }
 
     .marquee_text {
@@ -597,32 +692,72 @@ ion-icon {
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
-    }   
-
-    .col-footer{
-        flex: 0 0 auto;
-        min-width: 50% !important;
-        padding-bottom:5% !important;
     }
 
-    .col-text-footer{
+    .col-footer {
+        flex: 0 0 auto;
+        min-width: 50% !important;
+        padding-bottom: 5% !important;
+    }
+
+    .col-text-footer {
         flex: 0 0 auto;
         min-width: 100% !important;
         padding-right: 0px !important;
         padding-bottom: 5% !important;
     }
 
-    .h-70{
+    .h-70 {
         height: 100% !important;
-      }
+    }
+
+    .mouse {
+        background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-attachment: absolute;
+        background-position: 0% 0%;
+        z-index: -1;
+    }
+
+    .blue {
+        background: url(/Assets/Icons/eu-icon-pack-portfolio-06.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-attachment: absolute;
+        background-position: 0% 0%;
+        z-index: -1;
+    }
+
+    .portfolio {
+        background: url(/Assets/Icons/eu-icon-pack-portfolio-10.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 105%;
+        overflow: hidden;
+        background-size: auto;
+        background-attachment: absolute;
+        background-position: -21% -100%;
+        z-index: -1;
+    }
+
+    .p-text {
+        max-width: 100% !important;
+    }
 }
 
-.col-footer{
+.col-footer {
     flex: 0 0 auto;
     width: 35%;
 }
 
-.col-text-footer{
+.col-text-footer {
     flex: 0 0 auto;
     width: 60%;
     padding-right: 300px;
@@ -646,9 +781,34 @@ ion-icon {
         padding-top: 5% !important;
     }
 
-    .h-70-{
+    .h-70- {
         height: 100%;
-      }
+    }
+
+    .p-text {
+        max-width: 55%;
+        padding-bottom: 4px;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (min-device-width: 1280px) {
+    .p-text {
+        max-width: 45%;
+        padding-bottom: 4px;
+        line-height: 1.4;
+    }
+
+    .portfolio {
+        background: url(/Assets/Icons/eu-icon-pack-portfolio-10.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-size: 95%;
+        background-position: 0% 0%;
+        z-index: -1;
+    }
 }
 
 .home-screen {
@@ -1111,41 +1271,43 @@ blockquote.testimony-29101 .author cite {
     padding-top: 10%;
 }
 
-.screen-darken{
-    content: ''; 
+.screen-darken {
+    content: '';
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
-    z-index:10; opacity:1; 
-    visibility:visible;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
     position: fixed;
-  }
-  
-  .navbar{
+}
+
+.navbar {
     position: relative;
     z-index: 15;
-  }
+}
 
-  section{
+section {
     margin-top: 40px;
-  }
-  .card {
+}
+
+.card {
     margin: 10px 4px;
     transition: .6s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-block {
-     padding: 10px;
-  }
+}
 
-  .scrollcards {
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-block {
+    padding: 10px;
+}
+
+.scrollcards {
     background-color: #fff;
     overflow: auto;
     white-space: nowrap;
@@ -1156,40 +1318,88 @@ blockquote.testimony-29101 .author cite {
     -ms-user-select: none;
     user-select: none;
     transition: opacity .4s ease
-  }
+}
 
-  .scrollcards.dragging{
+.scrollcards.dragging {
     cursor: grab;
     scroll-behavior: auto;
     transition: opacity .4s ease
-  }
-  .scrollcards.dragging img{
+}
+
+.scrollcards.dragging img {
     pointer-events: none;
-  }
+}
 
-  ::-webkit-scrollbar {
-      width: 0px;
-      height: 0px;
-      background: transparent;
-  }
-  
-  div.scrollcards .card {
-      display: inline-block;
-      padding: 14px;
-      text-decoration: none;
-      height: auto; 
-      width: 500px;
-  }
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
 
-  .col-services {
+div.scrollcards .card {
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+    height: auto;
+    width: 500px;
+}
+
+.col-services {
     flex: 1 0 0%;
-  }
+}
 
-  .h-70-{
+.h-70- {
     height: 75%;
-  }
+}
 
-.img-h{
+.img-h {
     height: 155px;
     min-height: 70px;
+}
+
+.portfolio-space {
+    padding-bottom: 2%;
+    padding-top: 4%;
+}
+
+.sidebar {
+    overflow: auto;
+    position: sticky;
+    top: 10%;
+}
+
+.tooltip-txt {
+    color: #3C50FF;
+    text-decoration: none;
+}
+
+.pt-padding {
+    padding-top: 4%;
+    padding-bottom: 6%;
+}
+
+.instruction {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    color: #263089;
+    padding-top: 2%;
+}
+
+.accordion-button {
+    font-weight: 600 !important;
+}
+
+.logo-img-div{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    opacity: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+    max-height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 }

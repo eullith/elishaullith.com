@@ -44,8 +44,8 @@
 </head>
 
 <body class="prevent-select">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navlink">
+    <header class="mouse white">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navlink">
             <div class="container-fluid" style="padding-top: 0.5%;">
                 <a class="navbar-brand" href="index.html">
                     <img src="/Assets/logo_eu.svg" alt="logo" width="auto" height="35" id="logo-img"></a>
@@ -55,39 +55,40 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Works</a>
-                        <a class="nav-link" href="#startchange">Services</a>
+                        <a class="nav-link" aria-current="page" href="#mywork">Works</a>
+                        <a class="nav-link" href="#myservices">Services</a>
                         <a class="nav-link" href="#">About</a>
                         <a class="nav-link btn btn-nav" href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
 
-    <div class="container-fluid container-padding">
-        <br>
-        <div class="row">
-            <div class="col home-screen">
-                <h1 class="display-6" style="font-weight: normal;">Let's create something</h1>
-                <h1 class="display-5 elisha txt-rotate" data-period="1500"
-                    data-rotate='[ "engaging.", "interactive.", "entertaining.", "unique."]' style="color: #3C50FF; text-size-adjust: auto;
+
+        <div class="container-fluid container-padding">
+            <br>
+            <div class="row">
+                <div class="col home-screen">
+                    <h1 class="display-6" style="font-weight: normal;">Let's create something</h1>
+                    <h1 class="display-5 elisha txt-rotate" data-period="1500"
+                        data-rotate='[ "engaging.", "interactive.", "entertaining.", "unique."]' style="color: #3C50FF; text-size-adjust: auto;
                 ">
-                    &lt;span&gt;</h1> <br>
-                <div class="gap-2 home-screen-button">
-                    <a type="button" class="btn btn-primary xl" href="contact.html">Hire me</a>
-                    <button type="button" class="btn btn-primary-s">Explore my work
-                        <span class="material-icons md-dark">
-                            navigate_next
-                        </span>
-                    </button>
+                        &lt;span&gt;</h1> <br>
+                    <div class="gap-2 home-screen-button">
+                        <a type="button" class="btn btn-primary xl" href="contact.html">Hire me</a>
+                        <button type="button" class="btn btn-primary-s">Explore my work
+                            <span class="material-icons md-dark">
+                                navigate_next
+                            </span>
+                        </button>
+                    </div>
+                    <br>
                 </div>
-                <br>
-            </div>
-            <div class="col asset-home-screen">
+                <div class="col asset-home-screen">
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <div class="marquee">
         <div class="marquee__inner marquee_text" aria-hidden="true">
@@ -121,7 +122,7 @@
     </div>
 
     <section>
-        <div class="container-fluid mywork-space">
+        <div class="container-fluid mywork-space" id="mywork">
             <h3 class="section-text">Recent projects</h3>
             <h2 class="text-space">Elisha is an experienced eLearning Developer
                 with a
@@ -132,32 +133,28 @@
             </h2>
             <div class="owl-one owl-carousel owl-theme">
                 <div class="card obj">
-                    <img src="/Assets/gob1.png" class="card-img-top" alt="...">
+                    <a href="https://360.articulate.com/review/content/37256d5e-50bd-4b47-af5f-b3c3a8894a00/review"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="/Assets/Anxiety - 1.png" class="card-img-top" alt="...">
+                    </a>
                 </div>
 
                 <div class="card obj">
-                    <img src="/Assets/Anxiety - 1.png" class="card-img-top" alt="...">
-                </div>
-
-                <div class="card obj">
-                    <img src="/Assets/Cultura y Desarrollo Organizacional.png" class="card-img-top" alt="...">
+                    <a href="https://360.articulate.com/review/content/e70ffe85-c838-42ea-8486-4d6eece195eb/review"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="/Assets/Cultura y Desarrollo Organizacional.png" class="card-img-top" alt="..."></a>
                 </div>
                 <div class="card obj">
-                    <img src="/Assets/gob1.png" class="card-img-top" alt="...">
-                </div>
-
-                <div class="card obj">
-                    <img src="/Assets/Anxiety - 1.png" class="card-img-top" alt="...">
-                </div>
-
-                <div class="card obj">
-                    <img src="/Assets/Earth Day Portfolio.png" class="card-img-top" alt="...">
+                    <a href="https://360.articulate.com/review/content/d950b656-7393-4443-9ecb-504c445c1ace/review"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="/Assets/Earth Day Portfolio.png" class="card-img-top" alt="...">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="space-div" style="background-color: #000; color:#f1f1f1 !important;">
+    <section class="space-div" style="background-color: #000; color:#f1f1f1 !important;" id="myservices">
         <div class="container" id="startchange" data-aos="fade-up" data-aos-duration="1000" data-aos="fade-up"
             data-aos-duration="1000">
             <h3 class="section-text">Services</h3>
@@ -259,20 +256,18 @@
     </div>
 
     <!-- CTA Section-->
-    <section>
-        <div class="container-fluid blue div-space ">
-            <h3 class="section-text" style="color: white !important">Have a project in mind?</h3>
-            <div class="row">
-                <div class="col">
-                    <h1 class="display-2" style="font-weight: 600;">Let's work together
-                    </h1>
-                    <div style="padding-top: 20px;">
-                        <button class="btn btn-primary-cta btn-lg xl" href="contact.html">Get in touch</button>
-                    </div>
-                </div>
+    <div class="container-fluid blue div-space">
+        <h3 class="section-text" style="color: white !important">Have a project in mind?</h3>
+        <div class="row">
+            <div class="col">
+                <h1 class="display-2" style="font-weight: 600; color: white !important"">Let's work together
+                </h1>
+                <div style=" padding-top: 20px;">
+                    <button class="btn btn-primary-cta btn-lg xl" href="contact.html">Get in touch</button>
             </div>
         </div>
-    </section>
+    </div>
+    </div>
 
     <footer>
         <div class="container-fluid div-footer">
