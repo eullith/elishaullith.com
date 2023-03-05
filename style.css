@@ -840,7 +840,6 @@ ion-icon {
     margin-left: auto
 }
 
-
 .owl-carousel,
 .owl-carousel .owl-item {
     -webkit-tap-highlight-color: transparent;
@@ -1388,7 +1387,11 @@ div.scrollcards .card {
     font-weight: 600 !important;
 }
 
-.logo-img-div{
+.accordion-body {
+    font-size: larger;
+}
+
+.logo-img-div {
     padding-top: 2%;
     padding-bottom: 2%;
     opacity: 80%;
@@ -1397,7 +1400,7 @@ div.scrollcards .card {
     justify-content: center;
 }
 
-.logo-img{
+.logo-img {
     max-height: 100%;
     padding-left: 10%;
     padding-right: 10%;
@@ -1405,22 +1408,22 @@ div.scrollcards .card {
 
 li::marker {
     color: #3C50FF;
-  }
-  
-  li::marker {
-    font-size: 1rem;
-  }
-  
+}
+
+li::marker {
+    font-size: 1.3rem;
+}
+
 /* Style the tab */
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    border-radius: 5px 5px 0px 0px ;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
     background-color: inherit;
     float: left;
     border: none;
@@ -1428,27 +1431,32 @@ li::marker {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
     background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
     background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
+}
+
+/* Style the tab content */
+.tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none !important;
     border-radius: 0px 0px 5px 5px;
-  }
+}
 
-  .portfolio-text{
+.portfolio-text {
     line-height: 1.6 !important;
-  }
+}
+
+.container-timeline{
+    padding-left: 7%;
+    padding-right: 6%;
+}
