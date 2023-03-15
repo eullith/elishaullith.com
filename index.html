@@ -58,7 +58,7 @@
                         <a class="nav-link" aria-current="page" href="#mywork">Works</a>
                         <a class="nav-link" href="#myservices">Services</a>
                         <a class="nav-link" href="#">About</a>
-                        <a class="nav-link btn btn-nav" href="contact.html">Contact</a>
+                        <a class="nav-link btn btn-nav" href="mailto: elisha@elishaullith.com">Let's chat</a>
                     </div>
                 </div>
             </div>
@@ -155,45 +155,42 @@
     </section>
 
     <section class="space-div" style="background-color: #000; color:#f1f1f1 !important;" id="myservices">
-        <div class="container" id="startchange" data-aos="fade-up" data-aos-duration="1000" data-aos="fade-up"
+        <div class="container-fluid " id="startchange" data-aos="fade-up" data-aos-duration="1000" data-aos="fade-up"
             data-aos-duration="1000">
             <h3 class="section-text">Services</h3>
             <h1 class="display-5" style="font-weight: 600; padding-bottom: 4%; color:#f1f1f1;">What can I do
                 for you?</h1>
             <br>
-
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="card-x">
-                        <div class="h-70-">
-                            <img class="img-h" src="/Assets/Icons/eu icon pack-02.svg" class="card-img-t" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">eLearning Development</h2>
-                            <p class="card-text">Take your eLearning content to the next
-                                level.</p>
-                        </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="card-x">
+                    <div class="h-70-">
+                        <img class="img-h" src="/Assets/Icons/eu icon pack-02.svg" class="card-img-t" alt="...">
                     </div>
-                    <div class="card-x">
-                        <div class="h-70-">
-                            <img class="img-h" src="/Assets/Icons/eu icon pack-03.svg" class="card-img-t" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Storyline Training</h5>
-                            <p class="card-text">Become proficient or improve your skills in
-                                Storyline
-                                360</p>
-                        </div>
+                    <div class="card-body">
+                        <h2 class="card-title">eLearning Design & Development</h2>
+                        <p class="card-text">Take your eLearning content to the next
+                            level.</p>
                     </div>
-                    <div class="card-x">
-                        <div class="h-70-">
-                            <img class="img-h" src="/Assets/Icons/eu icon pack-01.svg" class="card-img-t" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Coaching & Mentoring</h5>
-                            <p class="card-text">Flexible sessions to get advices on your
-                                eLearning project</p>
-                        </div>
+                </div>
+                <div class="card-x">
+                    <div class="h-70-">
+                        <img class="img-h" src="/Assets/Icons/eu icon pack-03.svg" class="card-img-t" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Storyline Training</h5>
+                        <p class="card-text">Become proficient or improve your skills in
+                            Storyline
+                            360</p>
+                    </div>
+                </div>
+                <div class="card-x">
+                    <div class="h-70-">
+                        <img class="img-h" src="/Assets/Icons/eu icon pack-01.svg" class="card-img-t" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coaching & Mentoring</h5>
+                        <p class="card-text">Flexible sessions to get advices on your
+                            eLearning project</p>
                     </div>
                 </div>
             </div>
@@ -260,13 +257,42 @@
         <h3 class="section-text" style="color: white !important">Have a project in mind?</h3>
         <div class="row">
             <div class="col">
-                <h1 class="display-2" style="font-weight: 600; color: white !important"">Let's work together
+                <h1 class="display-2" style="font-weight: 600; color: white !important; padding-bottom: 2%;">Let's work
+                    together
                 </h1>
-                <div style=" padding-top: 20px;">
-                    <button class="btn btn-primary-cta btn-lg xl" href="contact.html">Get in touch</button>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-contact">
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSfSY2kEtScCUpPxSSiZvGjc91MhB0euKN-Rn2uDxizvK6ov5Q/formResponse"
+                    method="post" target="hiddenConfirm" onsubmit="submitted=true">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Name*" aria-label="First name"
+                            name="entry.1453409344" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" name="entry.1948782695"
+                            placeholder="Email address*" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                            style="min-height: 100px; max-height: 100px; resize: none;" name="entry.995550347"
+                            placeholder="How can I help you?*"></textarea>
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <button type="submit" class="btn btn-primary-cta">Get in touch</button>
+                    </div>
+                    <div id='template' class='template'>
+                        
+                    </div>
+                </form>
+            </div>
+            <div>
+                <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
+                    onload="if(submitted){window.location='submission.html';}"></iframe>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -277,7 +303,7 @@
                         <img src="/Assets/logo_eu.svg" style="width: 100px;">
                     </div>
                     <div style="padding-top: 5%;">
-                        <h5>Create content to engage, entertain and educate your learners.</h5>
+                        <h5>Creating content to engage, entertain and educate your learners.</h5>
                     </div>
                 </div>
                 <div class="col">
@@ -339,6 +365,21 @@
         </button>
     </div>
 
+    <script>
+        function doPost(e) {
+            const name = e.parameter.name;
+            const email = e.parameter.email;
+            const subject = e.parameter.subject;
+            const message = e.parameter.message;
+
+            const recipient = "elisha@elishaullith.com";
+            const body = "Name: " + name + "\n\nEmail: " + email + "\n\nMessage:\n" + message;
+
+            MailApp.sendEmail(recipient, subject, body);
+
+            return ContentService.createTextOutput("Message sent!");
+        }
+    </script>
     <script>
         //Get the button:
         mybutton = document.getElementById("myBtn");

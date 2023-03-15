@@ -300,6 +300,7 @@ body {
 
 .card-text {
     font-size: 20px;
+    font-weight: 300;
     color: #f1f1f1;
 }
 
@@ -601,6 +602,11 @@ ion-icon {
     height: 45%px;
 }
 
+.xl2 {
+    width: 20%;
+    height: 45%px;
+}
+
 @media (min-width: 1680px) {
     .img-fluid {
         width: 9250000px !important;
@@ -614,6 +620,19 @@ ion-icon {
 
     .h-70- {
         height: 100% !important;
+    }
+
+    .card-img-t {
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .img-h {
+        height: 155px;
+        min-height: 70px;
     }
 }
 
@@ -688,7 +707,7 @@ ion-icon {
     .owl-1 .owl-dots {
         position: absolute;
         bottom: -30px !important;
-        left: 42% !important;
+        left: 50% !important;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -697,6 +716,12 @@ ion-icon {
     .col-footer {
         flex: 0 0 auto;
         min-width: 50% !important;
+        padding-bottom: 5% !important;
+    }
+
+    .col-contact {
+        flex: 0 0 auto;
+        min-width: 100% !important;
         padding-bottom: 5% !important;
     }
 
@@ -750,6 +775,16 @@ ion-icon {
     .p-text {
         max-width: 100% !important;
     }
+
+    .xl2 {
+        width: 100%;
+        height: 45%px;
+    }
+
+    .checkmark{
+        height: 10em !important;
+        padding-bottom: 6% !important;
+    }
 }
 
 .col-footer {
@@ -762,6 +797,13 @@ ion-icon {
     width: 60%;
     padding-right: 300px;
 
+}
+
+.col-contact {
+    color: #ffffff;
+    flex: 0 0 auto;
+    max-width: 48% !important;
+    padding-bottom: 5% !important;
 }
 
 /*for ipad view*/
