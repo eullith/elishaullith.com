@@ -55,10 +55,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#mywork">Works</a>
+                        <a class="nav-link" aria-current="page" href="#mywork">Work</a>
                         <a class="nav-link" href="#myservices">Services</a>
                         <a class="nav-link" href="#">About</a>
-                        <a class="nav-link btn btn-nav" href="mailto: elisha@elishaullith.com">Let's chat</a>
+                        <a class="nav-link btn btn-nav" href="mailto: info@elishaullith.com">Let's chat</a>
                     </div>
                 </div>
             </div>
@@ -71,22 +71,22 @@
                 <div class="col home-screen">
                     <h1 class="display-6" style="font-weight: normal;">Let's create something</h1>
                     <h1 class="display-5 elisha txt-rotate" data-period="1500"
-                        data-rotate='[ "engaging.", "interactive.", "entertaining.", "unique."]' style="color: #3C50FF; text-size-adjust: auto;
-                ">
+                        data-rotate='[ "engaging.", "entertaining.", "accesible.", "effective.", "interactive."]' style="color: #3C50FF; text-size-adjust: auto;">
                         &lt;span&gt;</h1> <br>
                     <div class="gap-2 home-screen-button">
-                        <a type="button" class="btn btn-primary xl" href="contact.html">Hire me</a>
+                        <a type="button" class="btn btn-primary" href="mailto: info@elishaullith.com">Work
+                            with
+                            me
+                        </a>
                         <button type="button" class="btn btn-primary-s">Explore my work
-                            <span class="material-icons md-dark">
-                                navigate_next
-                            </span>
                         </button>
                     </div>
-                    <br>
                 </div>
-                <div class="col asset-home-screen">
-                </div>
+                <br>
             </div>
+            <div class="col asset-home-screen">
+            </div>
+        </div>
         </div>
     </header>
 
@@ -284,7 +284,7 @@
                         <button type="submit" class="btn btn-primary-cta">Get in touch</button>
                     </div>
                     <div id='template' class='template'>
-                        
+
                     </div>
                 </form>
             </div>
@@ -326,9 +326,6 @@
                                     rel="noopener noreferrer">
                                     <h6>About</h6>
                                 </a>
-                                <a class="contact-text" href="contact.html">
-                                    <h6>Contact</h6>
-                                </a>
                             </div>
                         </div>
                         <div class="col-footer">
@@ -365,21 +362,6 @@
         </button>
     </div>
 
-    <script>
-        function doPost(e) {
-            const name = e.parameter.name;
-            const email = e.parameter.email;
-            const subject = e.parameter.subject;
-            const message = e.parameter.message;
-
-            const recipient = "elisha@elishaullith.com";
-            const body = "Name: " + name + "\n\nEmail: " + email + "\n\nMessage:\n" + message;
-
-            MailApp.sendEmail(recipient, subject, body);
-
-            return ContentService.createTextOutput("Message sent!");
-        }
-    </script>
     <script>
         //Get the button:
         mybutton = document.getElementById("myBtn");
