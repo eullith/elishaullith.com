@@ -289,13 +289,13 @@
                             placeholder="How can I help you?*"></textarea>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6LfTcF4mAAAAAAnE1t_bTN_yxuhzzg8RUwHWVkHG
-                    "></div>
+                    " data-callback="enablebtn"></div>
                     <br />
                     <div class="mb-3 d-grid gap-2">
-                        <button type="submit" class="btn btn-primary-cta">Get in touch</button>
+                        <input type="button" value="Submit" class="btn btn-primary-cta" id="button1"
+                            disabled="disabled">Get in touch</button>
                     </div>
                     <div id='template' class='template'>
-
                     </div>
                 </form>
             </div>
@@ -395,6 +395,11 @@
         }
     </script>
 
+    <script>
+        function enablebtn(){
+            document.getElementById("button1").disabled = false;
+        }
+    </script>
     <script>
         window.addEventListener('scroll', function () {
             let header = document.querySelector('header');
