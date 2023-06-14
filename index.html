@@ -292,8 +292,8 @@
                     " data-callback="callback"></div>
                     <br />
                     <div class="mb-3 d-grid gap-2">
-                        <button type="submit" value="submit" class="btn btn-primary-cta" id="button1"
-                            disabled >Get in touch</button>
+                        <button type="submit" class="btn btn-primary-cta" id="button1"
+                            hidden >Get in touch</button>
                     </div>
                     <div id='template' class='template'>
                     </div>
@@ -395,10 +395,10 @@
         }
     </script>
 
-    <script>
+    <script type="text/javascript">
         function callback(){
             const submitButton = document.getElementById("button1");
-            submitButton.removeAttribute("disabled");
+            submitButton.removeAttribute("hidden");
         }
     </script>
     <script>
