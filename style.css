@@ -1,11 +1,32 @@
-:root {
-    --dark: #0a0a0a;
-    --accent: #F06553;
-    --light: #ffffff;
-    --purple: #3C50FF;
-    --accent2: #214ed3;
+/* General body style of the page */
 
+/* Color palette */
+
+.dark {
+    color: #0a0a0a;
 }
+
+.dark-accent {
+    color: #214ed3;
+}
+
+.light-accent {
+    color: #EFF3FF;
+}
+
+.light {
+    color: #ffffff;
+}
+
+.purple {
+    color: #3C50FF;
+}
+
+.dark-purple {
+    color: #1965e0;
+}
+
+/* Body properties */
 
 body {
     font-family: 'Lato', serif !important;
@@ -16,28 +37,143 @@ body {
     position: relative;
 }
 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #0f071b7a;
+}
+
+/* Fixed position of navbar */
+.navbar {
+    position: relative;
+    z-index: 15;
+}
+
+/* Avoids copying text from website */
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+/* Fonts */
+
+.source-pro {
+    font-family: 'Source Serif 4', serif;
+    /* Font for Headers */
+}
+
+.bebas-nue {
+    font-family: 'Bebas Neue', cursive;
+    /* Font for sections call outs */
+}
+
+/* Icons */
+
 .material-icons {
     color: #f1f1f1;
 }
 
+/* Spacing */
+
+/* Main Container */
 .container-padding {
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
+.home-padding{
+    padding-top: 6%;
+    padding-bottom: 4%;
+}
+
+/* Logos Section Padding */
+.logo-padding {
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+/* Testimonial Padding */
+.special-padding {
+    padding-top: 0%;
+    padding-bottom: 10%;
+}
+
+/* Fluid Wider Container */
+.container-fluid {
+    padding-left: 5%;
+    padding-right: 5% !important;
+}
+
+/* Items below text spacing */
+.text-space {
+    padding-bottom: 5% !important;
+}
+
+/* Section Dividers */
+
+/* Light Divider */
+.accent-div {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #EFF3FF;
+    color: #0a0a0a;
+}
+
+/* Dark Divider */
 .black-div {
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: #3C50FF;
     color: #f1f1f1;
+    background-color: #0a0a0a;
+}
+
+/* Purple Divider */
+.purple-div {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #3C50FF;
+    color: #f1f1f1;
+}
+
+/* Dark purple Divider */
+
+.dark-purple-div {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #3C50FF;
+    color: #f1f1f1;
+}
+
+/* Footer Divider */
+.div-footer {
+    padding-bottom: 3%;
+    padding-top: 6%;
     background-color: black;
     color: #f1f1f1;
 }
 
-.black-div {
-    padding-left: 9%;
-    padding-right: 9%;
+/* Paddings */
 
+/* Padding between top and bottom of each section */
+.section-padding {
+    padding-bottom: 10%;
+    padding-top: 10%;
 }
 
 .div-space {
@@ -45,17 +181,7 @@ body {
     padding-top: 8%;
 }
 
-.space-div {
-    padding-bottom: 10%;
-    padding-top: 10%;
-}
-
-.div-footer {
-    padding-bottom: 3%;
-    padding-top: 6%;
-    background-color: black;
-    color: #f1f1f1;
-}
+/* Background Images */
 
 .mouse {
     background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
@@ -65,25 +191,14 @@ body {
     overflow: hidden;
     background-size: 100%;
     background-attachment: absolute;
-    background-position: 40% 80%;
-    z-index: -1;
-}
-
-.portfolio {
-    background: url(/Assets/Icons/eu-icon-pack-portfolio-10.svg);
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-size: 100%;
-    background-position: 0% 0%;
+    background-position: 80% 70%;
     z-index: -1;
 }
 
 
 .blue {
-    background-color: var(--purple) !important;
     background: url(/Assets/Icons/eu-icon-pack-06.svg);
+    background-color: #3C50FF;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -94,43 +209,43 @@ body {
     z-index: -1;
 }
 
-.minion {
-    font-family: minionpro-condensed-caption, serif;
-    font-style: normal;
-    font-weight: 500;
+/* Image properties*/
+
+.img{
+    width: 100%;
+    height: 140px;
 }
 
-.mbold {
-    font-family: minion-pro, serif;
-    font-style: normal;
-    font-weight: 700;
-}
+/* Text Styles */
 
-@media only screen and (min-width: 1200px) and (min-width: 768px) {
-    .top {
-        padding-top: 8rem;
-    }
-
-    .m {
-        text-align: left;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .top {
-        padding-top: 3rem;
-    }
-
-    .m {
-        text-align: center;
-        padding-left: 5rem;
-    }
+/* Bebas Nue Section Small Text */
+.section-text {
+    font-family: 'Bebas Neue', cursive;
+    color: #1965e0 !important;
 }
 
 .p-text {
     max-width: 55%;
     padding-bottom: 4px;
     line-height: 1.4;
+}
+
+/* Contact me section */
+.contact-text {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1%;
+    font-weight: 600;
+}
+
+/* About me text style*/
+.description{
+    color: #3C50FF !important;
+}
+
+/* Logo Section  Text */
+.logo-text {
+    font-family: 'Bebas Neue', cursive;
 }
 
 .elisha {
@@ -140,6 +255,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* Big Javascript Text */
+
 .elisha-2 {
     font-size: 50px;
     font-weight: 600;
@@ -147,15 +264,181 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#button {
-    background-color: #3C50FF !important;
-    border: 50px !important;
+/* Highlighted Purple Bold Text */
+.description {
+    color: #EFF3FF;
+    font-weight: bold;
 }
 
+/* Footer */
+.footer-text {
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+
+.text-space {
+    padding-bottom: 3%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+.fade-in-element {
+    animation: fade-in 1.4s;
+}
+
+.b {
+    border-style: solid !important;
+    border-color: #3C50FF !important;
+}
+
+.align {
+    vertical-align: bottom;
+}
+
+
+
+/* Background Properties */
+
+.bg-dark {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.bg-dark-accent {
+    background-color: #214ed3;
+    color: #ffffff;
+}
+
+.bg-light-accent {
+    background-color: #EFF3FF;
+    color: #0a0a0a;
+}
+
+.bg-light {
+    background-color: #ffffff;
+    color: #0a0a0a;
+}
+
+.bg-purple {
+    background-color: #3C50FF;
+    color: #ffffff;
+}
+
+.bg-dark-purple {
+    background-color: #1965e0;
+    color: #ffffff;
+}
+
+/* Card Properties */
+
+/* Animated on hover cards */
 .card {
+    border-style: solid !important;
+    border: #0a0a0a;
+    border-width: 1px;
+    margin: 10px 4px;
+    border-radius: 15px;
+    color: #0a0a0a !important;
+    height: 100% !important;
+}
+
+/* Numbered circles on cards */
+.circle {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #3C50FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center middle;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    color: #0a0a0a !important;
+    padding-top: 0px !important;
+    font-size: large;
+}
+
+.card-text {
+    color: #0a0a0a !important;
+    padding-bottom: 2%;
+    font-weight: normal !important;
+}
+
+/* Makes card-title fonts size bigger */
+#l-text{
+    font-size: 28px !important;
+}
+
+.card-img-top {
+    padding-top: 10%;
+}
+
+.card-img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border: #0a0a0a;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: left;
+}
+
+.card-img-profile {
+    object-fit: cover;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border: #0a0a0a;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* No border cards */
+.card-block {
+    padding: 10px;
+}
+
+/* No border cards */
+.card-l {
     border: none;
 }
 
+/* Small cards with specfic height*/
 .card-x {
     padding: 2%;
     border-style: solid;
@@ -168,6 +451,7 @@ body {
     text-align: center;
 }
 
+/* Dark cards with specfic height*/
 .card-s {
     padding: 2%;
     border-style: none;
@@ -194,6 +478,28 @@ body {
     transform: none !important;
 }
 
+/* Full sized image within cards*/
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px !important;
+}
+
+/* Sized down image within cards*/
+.card-img-t {
+    width: 60%;
+    object-fit: cover;
+    align-self: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Size of card within the carousel*/
+.card-carousel {
+    size: 200px !important;
+}
+
+/* Cards paddings */
 .card-pt {
     padding-top: 4%;
     background-color: none;
@@ -210,149 +516,35 @@ body {
     transform: scale(1.02);
 }
 
-.description {
-    color: #3C50FF;
-    font-weight: bold;
-}
-
-.text-space {
-    padding-bottom: 3%;
-}
-
-.card-img-top {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px !important;
-}
-
-.card-img-t {
-    width: 60%;
-    object-fit: cover;
-    align-self: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.section-text {
-    font-family: 'Bebas Neue', cursive;
-    color: #1965e0 !important;
-}
-
-.card-carousel {
-    size: 200px !important;
-}
-
-.card-body {
-    border: none;
-}
-
-.center {
-    margin: auto;
-    width: 50%;
-    border: transparent;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav-link {
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-}
-
-.hidden {
-    opacity: 0;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: scale(.7, .7)
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in-element {
-    animation: fade-in 1.4s;
-}
-
-.b {
-    border-style: solid !important;
-    border-color: #3C50FF !important;
-}
-
-.align {
-    vertical-align: bottom;
-}
-
 .card-footer {
     padding-left: 0%;
 }
 
 .card-title {
     font-weight: 500;
+    padding-top: 12%;
     font-size: 25px;
     color: #f1f1f1;
     justify-self: left;
 }
 
+.card-textd {
+    font-size: 20px;
+    padding-top: 2%;
+    font-weight: 300;
+    color: black;
+}
+
 .card-text {
     font-size: 20px;
+    padding-top: 2%;
     font-weight: 300;
     color: #f1f1f1;
 }
 
-.bg-light {
-    background-color: var(--light) !important;
-}
+/* Button Properties */
 
-.bg-yellow {
-    background-color: var(--yellow) !important;
-}
-
-.bg-dark {
-    background-color: var(--dark) !important;
-}
-
-.text-dark {
-    color: var(--dark) !important;
-}
-
-.text-yellow {
-    color: var(--yellow) !important;
-}
-
-.card-l {
-    border: none;
-}
-
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background-color: #F5F5F5;
-}
-
-body::-webkit-scrollbar {
-    width: 6px;
-    background-color: #F5F5F5;
-}
-
-body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: #0f071b7a;
-}
-
+/* Button with outline normal state */
 .btn-outline-primary:active {
     background-color: #fff !important;
     color: #3C50FF !important;
@@ -360,12 +552,14 @@ body::-webkit-scrollbar-thumb {
     border-radius: 35px;
 }
 
+/* Button with outline hover state */
 .btn-outline-primary:hover {
     background-color: #3C50FF !important;
     border-color: #3C50FF !important;
     border-radius: 35px;
 }
 
+/* Button with outline general properties */
 .btn-primary-outline {
     background-color: none !important;
     color: #0b0b0be0 !important;
@@ -377,89 +571,13 @@ body::-webkit-scrollbar-thumb {
     padding: 5px 40px;
 }
 
-.container-fluid {
-    padding-left: 5%;
-    padding-right: 5% !important;
-}
-
-.nav-link {
-    color: black !important;
-    margin-right: 20px !important;
-}
-
-.nav-link:hover {
-    color: #3C50FF !important;
-}
-
-.nav {
-    background-color: #f1f1f1;
-}
-
+/* Dark button */
 .btn-sm {
     color: black;
     border-radius: 35px;
 }
 
-.active {
-    color: #3C50FF !important;
-}
-
-ion-icon {
-    color: #3C50FF;
-}
-
-
-/*hover play button*/
-
-.itemsContainer {
-    background: white;
-    float: left;
-    position: relative;
-    width: auto;
-    height: auto;
-    margin-right: auto;
-}
-
-.itemsContainer:hover .play {
-    display: block;
-}
-
-.play {
-    position: absolute;
-    display: none;
-    top: 40%;
-    width: 40px;
-    margin: 0 auto;
-    left: 0px;
-    right: 0px;
-    z-index: 100;
-    opacity: 0.9;
-}
-
-#topRightFixed {
-    position: fixed;
-    top: 90%;
-    left: 95%;
-    padding: 0px;
-}
-
-.btn-primary-round {
-    background-color: #0f071b7a;
-    border-color: none;
-    border-radius: 100%;
-    height: 50px;
-    width: 50px;
-}
-
-.carousel-control-prev {
-    background-color: #0f071b7a;
-    border-color: none;
-    border-radius: 100%;
-    height: auto;
-    width: auto;
-    align-self: center;
-}
-
+/* Navbar button properties */
 .btn-nav {
     background-color: transparent !important;
     color: black !important;
@@ -467,37 +585,6 @@ ion-icon {
     border-width: 2px;
     border-radius: 35px;
     width: 110px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.portfolio-nav {
-    background-color: none !important;
-    border-color: none !important;
-    border-width: 2px;
-    border-radius: 35px;
-    width: 90px;
-    text-align: center;
-}
-
-.portfolio-nav:hover {
-    background-color: #3C50FF !important;
-    border-color: #3C50FF !important;
-    color: white !important;
-    border-width: 2px;
-    border-radius: 35px;
-    width: 90px;
-    text-align: center;
-}
-
-.active-pt {
-    background-color: #3C50FF !important;
-    border-color: #3C50FF !important;
-    color: white !important;
-    border-width: 2px;
-    border-radius: 35px;
-    width: 90px;
-    text-align: center;
 }
 
 
@@ -507,24 +594,11 @@ ion-icon {
     color: white !important;
 }
 
+/* Primary/General button properties */
 .btn-primary {
     background-color: #3C50FF;
     border-color: #3C50FF !important;
     border-radius: 35px;
-}
-
-.btn-primary-s {
-    background-color: #ffffff !important;
-    color: #000;
-    border-color: #f0655300 !important;
-    border-radius: 30px;
-}
-
-.btn-primary-cta {
-    background-color: #ffffff !important;
-    color: #000;
-    border-color: #f0655300 !important;
-    border-radius: 30px;
 }
 
 .btn-primary:hover {
@@ -532,49 +606,33 @@ ion-icon {
     border-color: #3b4deb !important;
 }
 
+/* Small button properties */
+.btn-primary-s {
+    background-color: #ffffff !important;
+    color: #000;
+    border-color: #f0655300 !important;
+    border-radius: 30px;
+}
+
 .btn-primary-s:hover {
     color: #3b4deb !important;
     background-color: none !important;
 }
 
-.btn-primary-cta:hover {
+/* Call to Action button properties */
+.btn-primary-cta {
+    background-color: #ffffff !important;
     color: #000;
-    background-color: #e6e6e6 !important;
+    border-color: #000000 !important;
+    border-radius: 30px;
 }
 
-.demo {
-    background-color: #fff;
-    background-image: radial-gradient(circle, #a6a6a605 20%, transparent 10%), radial-gradient(circle, #a6a6a620 20%, transparent 10%);
-    background-size: 8px 8px;
-    background-position: 0 0, 100px 100px;
+.btn-primary-cta:hover {
+    color: #ffffff;
+    background-color: #0a0a0a !important;
 }
 
-.gradient {
-    background: rgb(102, 0, 255);
-    background: linear-gradient(180deg, rgba(102, 0, 255, 1) 36%, rgba(178, 129, 253, 1) 65%, rgba(251, 251, 251, 1) 88%);
-}
-
-.material-icons.md-dark {
-    color: rgb(0, 0, 0);
-    vertical-align: middle;
-}
-
-.material-icons.md-dark:hover {
-    color: #3b4deb;
-}
-
-.material-icons.md-dark.md-inactive {
-    color: rgba(0, 0, 0, 0.26);
-}
-
-.obj {
-    transition: transform 250ms;
-}
-
-.obj:hover {
-    transform: translateY(-10px);
-}
-
+/* Purple outlined button properties */
 .btn-outline-secondary {
     border-radius: 35px !important;
 }
@@ -585,6 +643,7 @@ ion-icon {
     background-color: #3b4deb !important;
 }
 
+/* Light outlined button properties */
 .btn-outline-white {
     border-color: white;
     color: white;
@@ -597,14 +656,65 @@ ion-icon {
     background-color: white;
 }
 
-.xl {
-    width: 12%;
-    height: 45%px;
+/* Round button to scroll to top properties */
+.btn-primary-round {
+    background-color: #0f071b7a;
+    border-color: none;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
 }
 
-.xl2 {
-    width: 20%;
-    height: 45%px;
+/* CTA button gap */
+.button-container {
+    display: flex;
+    justify-content: auto;
+}
+
+.button-container button {
+    margin: 0 20px;
+    /* Adjust the margin value to increase or decrease the gap */
+}
+
+/* Nav properties */
+
+/* Makes items text color black in navbar */
+.nav-link {
+    color: black !important;
+    margin-right: 20px !important;
+}
+
+/* Makes items text color purple on hover in navbar */
+.nav-link:hover {
+    color: #3C50FF !important;
+}
+
+/* Makes navbar background color purple */
+.nav {
+    background-color: #f1f1f1;
+}
+
+/* Makes navbar background color purple */
+.active {
+    color: #3C50FF !important;
+}
+
+/* Scroll up button position in website property */
+#topRightFixed {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    padding: 0px;
+}
+
+/* Hover animation properties */
+
+.obj {
+    transition: transform 250ms;
+}
+
+.obj:hover {
+    transform: translateY(-10px);
 }
 
 @media (min-width: 1680px) {
@@ -639,10 +749,12 @@ ion-icon {
 /*Responsive adjustments for mobile view*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
 
+    /* Smallen the font size in mobile view*/
     .elisha {
-        font-size: 55px;
+        font-size: 40px;
     }
 
+    /* Adds additional padding when in mobile view */
     .home-screen {
         padding-bottom: 10% !important;
         padding-top: 10% !important;
@@ -659,6 +771,7 @@ ion-icon {
         font-weight: 400 !important;
     }
 
+    /* Widens the container space in mobile view */
     .container-fluid {
         padding-left: 8% !important;
         padding-right: 8% !important;
@@ -668,16 +781,19 @@ ion-icon {
         padding-top: 6% !important;
     }
 
+    /* hides the jump to top button */
     #topRightFixed {
         visibility: hidden !important;
     }
 
+    /* hides the scrollbar in mobile view*/
     html,
     body {
         overflow-x: hidden;
         overflow-y: scroll !important;
     }
 
+    /* Makes marquee text font size bigger */
     .marquee_text {
         font-size: 40px !important;
     }
@@ -689,11 +805,6 @@ ion-icon {
 
     .text-space {
         padding-bottom: 10% !important;
-    }
-
-    .mywork-space {
-        padding-top: 16%;
-        padding-bottom: 16%;
     }
 
     .x-space {
@@ -737,7 +848,7 @@ ion-icon {
     }
 
     .mouse {
-        background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
+        background: url(/Assets/Icons/eu\ icon\ pack-12-10.svg);
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
@@ -750,6 +861,7 @@ ion-icon {
 
     .blue {
         background: url(/Assets/Icons/eu-icon-pack-portfolio-06.svg);
+        background-color: #3C50FF;
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
@@ -760,32 +872,65 @@ ion-icon {
         z-index: -1;
     }
 
-    .portfolio {
-        background: url(/Assets/Icons/eu-icon-pack-portfolio-10.svg);
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 105%;
-        overflow: hidden;
-        background-size: auto;
-        background-attachment: absolute;
-        background-position: -21% -100%;
-        z-index: -1;
-    }
-
     .p-text {
         max-width: 100% !important;
-    }
-
-    .xl2 {
-        width: 100%;
-        height: 45%px;
     }
 
     .checkmark {
         height: 10em !important;
         padding-bottom: 6% !important;
     }
+
+    .card-title {
+        font-weight: 500;
+        padding-top: 4%;
+        font-size: 25px;
+        color: #f1f1f1;
+        justify-self: left;
+    }
+
+    /* adjusts space between CTA buttons*/
+    .button-container button {
+        margin: 0 12px;
+        /* Adjust the margin value to increase or decrease the gap */
+    }
+
+    /* adjusts button style in the navbar dropdown */
+    .btn-nav {
+        color: black !important;
+        border: none;
+        align-self: self-start;
+        width: auto;
+    }
+
+    .navbar-nav {
+        padding: 15px 0px 0px !important;
+    }
+
+    /* Adds bottom padding to card images of work section when in mobile view*/
+    .mob-img {
+        padding-bottom: 25px;
+    }
+
+    blockquote.testimony-29101 p {
+        font-size: 20px !important;
+    }
+
+    blockquote.testimony-29101 .author {
+        font-size: 16px !important;
+    }
+
+    .card-img-profile{
+        max-width: 300px !important;
+        max-height: 350px !important;
+    }
+
+    .card-img{
+        width: 100%;
+    }
 }
+
+/* Footer properties */
 
 .col-footer {
     flex: 0 0 auto;
@@ -794,9 +939,8 @@ ion-icon {
 
 .col-text-footer {
     flex: 0 0 auto;
-    width: 60%;
+    width: 70%;
     padding-right: 300px;
-
 }
 
 .col-contact {
@@ -806,7 +950,7 @@ ion-icon {
     padding-bottom: 5% !important;
 }
 
-/*for ipad view*/
+/*CSS Properties for ipad responsive view*/
 @media only screen and (min-device-width: 900px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
 
     .elisha {
@@ -829,6 +973,26 @@ ion-icon {
         line-height: 1.4;
     }
 
+    .card-title {
+        font-weight: 500;
+        padding-top: 12%;
+        font-size: 25px;
+        color: #f1f1f1;
+        justify-self: left;
+    }
+
+    .col-text-footer {
+    flex: 0 0 auto;
+    width: 65%;
+    padding-right: 120px;
+    }
+
+    .text-container{
+        max-width: 80%;
+    }
+    .card-img{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-device-width: 1280px) {
@@ -837,38 +1001,19 @@ ion-icon {
         padding-bottom: 4px;
         line-height: 1.4;
     }
-
-    .portfolio {
-        background: url(/Assets/Icons/eu-icon-pack-portfolio-10.svg);
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        background-size: 95%;
-        background-position: 0% 0%;
-        z-index: -1;
-    }
 }
 
+/*Padding properties of first section of the website*/
 .home-screen {
     padding-bottom: 10%;
     padding-top: 12%;
     min-width: 500px;
 }
 
-.img-size {
-    width: 550px;
-}
-
 .experience-text {
     max-width: 75%;
     padding-bottom: 2%;
     font-weight: 400;
-}
-
-.mywork-space {
-    padding-top: 10%;
-    padding-bottom: 10%;
 }
 
 .container-carousel {
@@ -1204,14 +1349,12 @@ blockquote.testimony-29101 .author cite {
     color: rgb(58, 55, 55);
 }
 
+/* Top padding of "work with me" button on home page*/
 .home-screen-button {
     padding-top: 3%;
 }
 
-.asset-home-screen {
-    padding-bottom: 10%;
-    padding-top: 0.5%;
-}
+/* Marquee effect properties*/
 
 .marquee {
     position: relative;
@@ -1225,10 +1368,11 @@ blockquote.testimony-29101 .author cite {
 
 .marquee__inner {
     width: fit-content;
+    height: auto;
     display: flex;
     position: relative;
     transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 20s linear infinite alternate-reverse;
+    animation: marquee 15s linear infinite alternate-reverse;
     font-family: 'Bebas Neue', cursive;
     background-color: #3C50FF;
     color: white;
@@ -1239,7 +1383,13 @@ blockquote.testimony-29101 .author cite {
 }
 
 .marquee_text {
-    font-size: 70px;
+    font-size: 50px;
+}
+
+.marquee_icon {
+    font-size: 30px;
+    margin: 10px 0px 10px 1px;
+    padding: 0px 15px 0px 15px !important;
 }
 
 @keyframes marquee {
@@ -1252,184 +1402,18 @@ blockquote.testimony-29101 .author cite {
     }
 }
 
-.review {
-    padding-top: 5%;
+/* Divider line for portfolio items*/
+.full-width-hr {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    /* Set your desired color */
+    border: none;
+    margin: 10px 0;
+    /* Adjust margin as needed */
 }
 
-.col-7 {
-    min-width: 400px;
-}
-
-.review-asset {
-    max-width: 500px !important;
-    min-width: 300px !important;
-}
-
-.bebas {
-    font-family: 'Bebas Neue', cursive;
-}
-
-.contact-text {
-    color: white;
-    text-decoration: none;
-    padding-bottom: 1%;
-    font-weight: 600;
-}
-
-/*.contact-text:hover {
-    color: #1965e0;
-}*/
-
-.footer-text {
-    font-weight: 600;
-    padding-bottom: 2%;
-}
-
-.contact-icons {
-    padding-top: 10%;
-    width: 150px;
-}
-
-.arrow {
-    font-size: 150px;
-    display: inline;
-}
-
-.prevent-select {
-    -webkit-user-select: none;
-    /* Safari */
-    -ms-user-select: none;
-    /* IE 10 and IE 11 */
-    user-select: none;
-    /* Standard syntax */
-}
-
-.contact-screen {
-    padding-bottom: 10%;
-    padding-top: 10%;
-}
-
-.screen-darken {
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-    z-index: 10;
-    opacity: 1;
-    visibility: visible;
-    position: fixed;
-}
-
-.navbar {
-    position: relative;
-    z-index: 15;
-}
-
-section {
-    margin-top: 40px;
-}
-
-.card {
-    margin: 10px 4px;
-    transition: .6s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-block {
-    padding: 10px;
-}
-
-.scrollcards {
-    background-color: #fff;
-    overflow: auto;
-    white-space: nowrap;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    transition: opacity .4s ease
-}
-
-.scrollcards.dragging {
-    cursor: grab;
-    scroll-behavior: auto;
-    transition: opacity .4s ease
-}
-
-.scrollcards.dragging img {
-    pointer-events: none;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    background: transparent;
-}
-
-div.scrollcards .card {
-    display: inline-block;
-    padding: 14px;
-    text-decoration: none;
-    height: auto;
-    width: 500px;
-}
-
-.col-services {
-    flex: 1 0 0%;
-}
-
-.h-70- {
-    height: 75%;
-}
-
-.img-h {
-    height: 155px;
-    min-height: 70px;
-}
-
-.portfolio-space {
-    padding-bottom: 2%;
-    padding-top: 4%;
-}
-
-.sidebar {
-    overflow: auto;
-    position: sticky;
-    top: 10%;
-}
-
-.tooltip-txt {
-    color: #3C50FF;
-    text-decoration: none;
-}
-
-.pt-padding {
-    padding-top: 4%;
-}
-
-.instruction {
-    font-style: italic;
-    font-family: 'Lato', sans-serif;
-    color: #263089;
-    padding-top: 2%;
-}
-
-.accordion-button {
-    font-weight: 600 !important;
-}
-
-.accordion-body {
-    font-size: larger;
-}
-
+/* svg Logo property */
 .logo-img-div {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -1445,57 +1429,53 @@ div.scrollcards .card {
     padding-right: 10%;
 }
 
-li::marker {
-    color: #3C50FF;
+/* Responsive Page Elements */
+@media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .top {
+        padding-top: 8rem;
+    }
+
+    .m {
+        text-align: left;
+    }
 }
 
-li::marker {
-    font-size: 1.3rem;
+@media only screen and (max-width: 600px) {
+    .top {
+        padding-top: 3rem;
+    }
+
+    .m {
+        text-align: center;
+        padding-left: 5rem;
+    }
 }
 
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    border-radius: 5px 5px 0px 0px;
+.card {
+    margin-bottom: 20px;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+@media (max-width: 575.98px) {
+    .card-deck .card {
+        margin-top: 30px;
+    }
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
+@media (min-width: 1231px) {
+    .container-fluid {
+        padding-left: 10%;
+        padding-right: 10% !important;
+        /* Set your different container width for screens above 1230px */
+    }
 
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
+    .circle {
+        width: 65px;
+        height: 65px;
+        font-size: 40px;
+    }
 
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none !important;
-    border-radius: 0px 0px 5px 5px;
-}
 
-.portfolio-text {
-    line-height: 1.6 !important;
-}
-
-.container-timeline {
-    padding-left: 7%;
-    padding-right: 6%;
+    .card-img {
+        max-width: 800px !important;
+    }
 }
