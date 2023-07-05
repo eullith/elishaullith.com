@@ -96,7 +96,7 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10%;
 }
 
-.home-padding{
+.home-padding {
     padding-top: 6%;
     padding-bottom: 4%;
 }
@@ -211,7 +211,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Image properties*/
 
-.img{
+.img {
     width: 100%;
     height: 140px;
 }
@@ -239,7 +239,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* About me text style*/
-.description{
+.description {
     color: #3C50FF !important;
 }
 
@@ -348,6 +348,12 @@ body::-webkit-scrollbar-thumb {
     height: 100% !important;
 }
 
+/* Align card right on desktop view*/
+
+.img-right {
+    text-align: right;
+}
+
 /* Numbered circles on cards */
 .circle {
     position: absolute;
@@ -360,7 +366,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center middle;
+    align-items: center;
     color: #fff;
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
@@ -375,18 +381,12 @@ body::-webkit-scrollbar-thumb {
 .card-title {
     color: #0a0a0a !important;
     padding-top: 0px !important;
-    font-size: large;
 }
 
 .card-text {
     color: #0a0a0a !important;
     padding-bottom: 2%;
     font-weight: normal !important;
-}
-
-/* Makes card-title fonts size bigger */
-#l-text{
-    font-size: 28px !important;
 }
 
 .card-img-top {
@@ -579,8 +579,6 @@ body::-webkit-scrollbar-thumb {
 
 /* Navbar button properties */
 .btn-nav {
-    background-color: transparent !important;
-    color: black !important;
     border-color: #3C50FF !important;
     border-width: 2px;
     border-radius: 35px;
@@ -589,8 +587,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .btn-nav:hover {
-    background-color: #3C50FF !important;
-    border-color: #3C50FF !important;
+    background-color: #3C50FF;
     color: white !important;
 }
 
@@ -630,6 +627,13 @@ body::-webkit-scrollbar-thumb {
 .btn-primary-cta:hover {
     color: #ffffff;
     background-color: #0a0a0a !important;
+}
+
+.btn-primary-cta:focus {
+    background-color: #ffffff !important;
+    color: #000;
+    border-color: #000000 !important;
+    border-radius: 30px;
 }
 
 /* Purple outlined button properties */
@@ -680,13 +684,13 @@ body::-webkit-scrollbar-thumb {
 
 /* Makes items text color black in navbar */
 .nav-link {
-    color: black !important;
+    color: black;
     margin-right: 20px !important;
 }
 
 /* Makes items text color purple on hover in navbar */
 .nav-link:hover {
-    color: #3C50FF !important;
+    color: #3C50FF;
 }
 
 /* Makes navbar background color purple */
@@ -920,12 +924,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 16px !important;
     }
 
-    .card-img-profile{
+    .card-img-profile {
         max-width: 300px !important;
         max-height: 350px !important;
     }
 
-    .card-img{
+    .card-img {
         width: 100%;
     }
 }
@@ -982,15 +986,16 @@ body::-webkit-scrollbar-thumb {
     }
 
     .col-text-footer {
-    flex: 0 0 auto;
-    width: 65%;
-    padding-right: 120px;
+        flex: 0 0 auto;
+        width: 65%;
+        padding-right: 120px;
     }
 
-    .text-container{
+    .text-container {
         max-width: 80%;
     }
-    .card-img{
+
+    .card-img {
         width: 100%;
     }
 }
@@ -1383,12 +1388,14 @@ blockquote.testimony-29101 .author cite {
 }
 
 .marquee_text {
+    padding-top: 5px;
     font-size: 50px;
 }
 
 .marquee_icon {
     font-size: 30px;
-    margin: 10px 0px 10px 1px;
+    display: flex;
+    margin: 6px 0px 10px 0px;
     padding: 0px 15px 0px 15px !important;
 }
 
