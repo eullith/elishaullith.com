@@ -30,6 +30,7 @@
 
 body {
     font-family: 'Lato', serif !important;
+    font-display: optional;
     font-style: normal;
     font-weight: 500;
     background-color: #ffffff;
@@ -74,11 +75,13 @@ body::-webkit-scrollbar-thumb {
 
 .source-pro {
     font-family: 'Source Serif 4', serif;
+    font-display: optional;
     /* Font for Headers */
 }
 
 .bebas-nue {
     font-family: 'Bebas Neue', cursive;
+    font-display: optional;
     /* Font for sections call outs */
 }
 
