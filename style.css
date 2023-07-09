@@ -30,7 +30,7 @@
 
 body {
     font-family: 'Lato', serif !important;
-    font-display: optional;
+    font-display: fallback;
     font-style: normal;
     font-weight: 500;
     background-color: #ffffff;
@@ -74,14 +74,15 @@ body::-webkit-scrollbar-thumb {
 /* Fonts */
 
 .source-pro {
-    font-family: 'Source Serif 4', serif;
-    font-display: optional;
+    font-family: 'Lato', serif;
+    font-display: fallback;
+    font-weight: 600;
     /* Font for Headers */
 }
 
 .bebas-nue {
     font-family: 'Bebas Neue', cursive;
-    font-display: optional;
+    font-display: fallback;
     /* Font for sections call outs */
 }
 
@@ -187,17 +188,16 @@ body::-webkit-scrollbar-thumb {
 /* Background Images */
 
 .mouse {
-    background: url(/Assets/Icons/eu-icon-pack-12-10-.svg);
+    background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: absolute;
-    background-position: 80% 70%;
+    background-position: 0% 0%;
     z-index: -1;
 }
-
 
 .blue {
     background: url(/Assets/Icons/eu-icon-pack-06.svg);
@@ -343,11 +343,12 @@ body::-webkit-scrollbar-thumb {
 
 /* Animated on hover cards */
 .card {
-    border-style: solid !important;
+    border-style: none !important;
     border: #0a0a0a;
     border-width: 1px;
     margin: 10px 4px;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.015);
     color: #0a0a0a !important;
     height: 100% !important;
 }
@@ -401,7 +402,7 @@ body::-webkit-scrollbar-thumb {
     width: 90%;
     height: auto;
     object-fit: cover;
-    border-style: solid !important;
+    border-style: none !important;
     border-width: 1px !important;
     border: #0a0a0a;
     border-radius: 20px;
@@ -415,7 +416,7 @@ body::-webkit-scrollbar-thumb {
 
 .card-img-profile {
     object-fit: cover;
-    border-style: solid !important;
+    border-style: none !important;
     border-width: 1px !important;
     border: #0a0a0a;
     border-radius: 20px;
@@ -856,7 +857,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .mouse {
-        background: url(/Assets/Icons/eu-icon-pack-12-10-.svg);
+        background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
