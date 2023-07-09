@@ -225,6 +225,7 @@ body::-webkit-scrollbar-thumb {
 .section-text {
     font-family: 'Bebas Neue', cursive;
     color: #1965e0 !important;
+    font-size: 22pt;
 }
 
 .p-text {
@@ -855,7 +856,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .mouse {
-        background: url(/Assets/Icons/eu\ icon\ pack-12-10.svg);
+        background: url(/Assets/Icons/eu-icon-pack-12-10-.svg);
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
