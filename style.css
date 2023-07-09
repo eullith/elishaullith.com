@@ -395,7 +395,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-img-top {
-    padding-top: 10%;
+    padding-top: 18%;
+    padding-bottom: 13%;
 }
 
 .card-img {
