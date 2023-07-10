@@ -30,7 +30,6 @@
 
 body {
     font-family: 'Lato', serif !important;
-    font-display: fallback;
     font-style: normal;
     font-weight: 500;
     background-color: #ffffff;
@@ -73,16 +72,31 @@ body::-webkit-scrollbar-thumb {
 
 /* Fonts */
 
+@font-face {
+    font-family: 'Lato';
+    src: url(/Assets/__fonts/Lato/Lato-Regular.ttf);
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'Lato';
+    src: url(/Assets/__fonts/Lato/Lato-Bold.ttf);
+    font-weight: bold;
+  }
+
+@font-face {
+    font-family: 'Bebas Neue', cursive;
+    src: url(/Assets/__fonts/BebasNeue-Regular.ttf);
+}
+
 .source-pro {
     font-family: 'Lato', serif;
-    font-display: fallback;
     font-weight: 600;
     /* Font for Headers */
 }
 
 .bebas-nue {
     font-family: 'Bebas Neue', cursive;
-    font-display: fallback;
     /* Font for sections call outs */
 }
 
@@ -188,7 +202,7 @@ body::-webkit-scrollbar-thumb {
 /* Background Images */
 
 .mouse {
-    background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
+    background: url(/Assets/__icons/eu_icon_mouse.svg);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -200,7 +214,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .blue {
-    background: url(/Assets/Icons/eu-icon-pack-06.svg);
+    background: url(/Assets/__icons/eu_icon_paper_planes.svg);
     background-color: #3C50FF;
     background-repeat: no-repeat;
     height: 100%;
@@ -226,6 +240,7 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Bebas Neue', cursive;
     color: #1965e0 !important;
     font-size: 22pt;
+    font-weight: 600;
 }
 
 .p-text {
@@ -858,7 +873,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .mouse {
-        background: url(/Assets/Icons/eu-icon-pack-12-10.svg);
+        background: url(/Assets/__icons/eu_icon_mouse.svg);
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
@@ -870,7 +885,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .blue {
-        background: url(/Assets/Icons/eu-icon-pack-portfolio-06.svg);
+        background: url(/Assets/__icons/eu_icon_paper_planes.svg);
         background-color: #3C50FF;
         background-repeat: no-repeat;
         height: 100%;
@@ -1394,14 +1409,14 @@ blockquote.testimony-29101 .author cite {
 }
 
 .marquee_text {
-    padding-top: 5px;
+    padding-top: 7px;
     font-size: 50px;
 }
 
 .marquee_icon {
     font-size: 30px;
     display: flex;
-    margin: 6px 0px 10px 0px;
+    margin: 12px 0px 10px 0px;
     padding: 0px 15px 0px 15px !important;
 }
 
