@@ -67,24 +67,6 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 
-$('.carousel .carousel-items').each(function () {
-    var minPerSlide = 2;
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    for (var i = 0; i < minPerSlide; i++) {
-        next = next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-
-        next.children(':first-child').clone().appendTo($(this));
-    }
-});
-
 //Owl Carousel Scripts-->
 
 $(document).ready(function () {
