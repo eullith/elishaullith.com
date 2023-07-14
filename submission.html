@@ -3,7 +3,7 @@
 
 <head>
 
-    <link rel="icon" href="./Assets/logo_eu.svg" type="image/icon type">
+    <link rel="icon" href="./Assets/__logos/logo_eu.svg" type="image/icon type">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -45,20 +45,20 @@
 
 <body class="prevent-select">
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navlink">
             <div class="container-fluid" style="padding-top: 0.5%;">
                 <a class="navbar-brand" href="index.html">
-                    <img src="/Assets/logo_eu.svg" alt="logo" width="auto" height="35" id="logo-img"></a>
+                    <img src="/Assets/__logos/logo_eu.svg" alt="logo" width="auto" height="35" id="logo-img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#mywork">Works</a>
-                        <a class="nav-link" href="#myservices">Services</a>
-                        <a class="nav-link" href="#">About</a>
-                        <a class="nav-link btn btn-nav" href="mailto: elisha@elishaullith.com">Let's chat</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="https://shop.elishaullith.com/" target="_blank">Shop</a>
+                        <a class="nav-link btn btn-nav" href="mailto: contact@elishaullith.com">Let's chat</a>
                     </div>
                 </div>
             </div>
@@ -80,15 +80,16 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="container-fluid div-footer">
             <div class="row">
                 <div class="col-text-footer">
                     <div class="row">
-                        <img src="/Assets/logo_eu.svg" style="width: 100px;">
+                        <img src="/Assets/__logos/logo_eu.svg" style="width: 100px;" alt="logo">
                     </div>
                     <div style="padding-top: 5%;">
-                        <h5>Creating content to engage, entertain and educate your learners.</h5>
+                        <h5>Creating content to engage, educate and empower your learners.</h5>
                     </div>
                 </div>
                 <div class="col">
@@ -99,20 +100,12 @@
                                 <a class="contact-text" href="index.html">
                                     <h6>Home</h6>
                                 </a>
-                                <a class="contact-text" href="https://www.linkedin.com/in/elisha-ullith-4a65511b2/"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <h6>Works</h6>
-                                </a>
-                                <a class="contact-text" href="https://www.upwork.com/freelancers/~010cd29b376b9ae088"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <h6>Services</h6>
-                                </a>
-                                <a class="contact-text" href="https://www.instagram.com/elishaullith/" target="_blank"
-                                    rel="noopener noreferrer">
+                                <a class="contact-text" href="about.html" target="_blank" rel="noopener noreferrer">
                                     <h6>About</h6>
                                 </a>
-                                <a class="contact-text" href="contact.html">
-                                    <h6>Contact</h6>
+                                <a class="contact-text" href="https://elishaullith.gumroad.com/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <h6>Shop</h6>
                                 </a>
                             </div>
                         </div>
@@ -137,7 +130,7 @@
                 </div>
             </div>
             <div style="align-self: center; padding-top: 4%;">
-                <p>© 2023 Elisha Ullith | eLearning Designer And Developer. &nbsp All rights reserved.</p>
+                <p>© 2023 Elisha Ullith | eLearning Designer and Developer. &nbsp All rights reserved.</p>
             </div>
     </footer>
 
@@ -150,21 +143,6 @@
         </button>
     </div>
 
-    <script>
-        function doPost(e) {
-            const name = e.parameter.name;
-            const email = e.parameter.email;
-            const subject = e.parameter.subject;
-            const message = e.parameter.message;
-
-            const recipient = "elisha@elishaullith.com";
-            const body = "Name: " + name + "\n\nEmail: " + email + "\n\nMessage:\n" + message;
-
-            MailApp.sendEmail(recipient, subject, body);
-
-            return ContentService.createTextOutput("Message sent!");
-        }
-    </script>
     <script>
         //Get the button:
         mybutton = document.getElementById("myBtn");
@@ -195,112 +173,6 @@
         })
     </script>
 
-    <!--Interactive text on Landing Page-->
-    <script>
-        var TxtRotate = function (el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 7) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtRotate.prototype.tick = function () {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 250 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function () {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function () {
-            var elements = document.getElementsByClassName('txt-rotate');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-rotate');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.06em solid #3c50ff; height:7px; }";
-            document.body.appendChild(css);
-        };
-    </script>
-
-    <script>
-        $('.carousel .carousel-items').each(function () {
-            var minPerSlide = 2;
-            var next = $(this).next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
-
-            for (var i = 0; i < minPerSlide; i++) {
-                next = next.next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-
-                next.children(':first-child').clone().appendTo($(this));
-            }
-        });
-
-    </script>
-
-    <!-- Owl Carousel Scripts-->
-    <script>
-
-        $(document).ready(function () {
-            $('.owl-one').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 2,
-                    },
-                    1000: {
-                        items: 2.5,
-                    }
-                }
-            });
-        });
-
-
-    </script>
-
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -309,13 +181,7 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
     <script src="jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
 </body>
 
 </html>
