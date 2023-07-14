@@ -29,9 +29,8 @@
 /* Body properties */
 
 body {
-    font-family: 'Lato', serif !important;
+    font-family: 'Lato regular' !important;
     font-style: normal;
-    font-weight: 500;
     background-color: #ffffff;
     color: #0a0a0a !important;
     position: relative;
@@ -78,7 +77,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @font-face {
-    font-family: 'Lato', serif;
+    font-family: 'Lato regular';
     src: url(/Assets/__fonts/Lato/Lato-Regular.ttf);
     font-weight: normal;
 }
