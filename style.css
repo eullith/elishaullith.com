@@ -76,13 +76,13 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Lato';
     src: url(/Assets/__fonts/Lato/Lato-Regular.ttf);
     font-weight: normal;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Lato';
     src: url(/Assets/__fonts/Lato/Lato-Bold.ttf);
     font-weight: bold;
-  }
+}
 
 @font-face {
     font-family: 'Bebas Neue', cursive;
@@ -198,7 +198,44 @@ body::-webkit-scrollbar-thumb {
     padding-top: 8%;
 }
 
+.image-container {
+    padding-top: 2px;
+    /* Adjust the desired top padding */
+    padding-bottom: 2%;
+    /* Adjust the desired bottom padding */
+    overflow: hidden;
+}
+
+.skills-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-image{
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.skills-padding {
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
 /* Background Images */
+
+.about-me {
+    background: url(/Assets/__icons/eu_icon_pack_about_me.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: 0% 0%;
+    z-index: -1;
+}
 
 .mouse {
     background: url(/Assets/__icons/eu_icon_mouse.svg);
@@ -225,12 +262,13 @@ body::-webkit-scrollbar-thumb {
     z-index: -1;
 }
 
-/* Image properties*/
+/* Image properties
 
 .img {
     width: 100%;
     height: 140px;
 }
+*/
 
 /* Text Styles */
 
@@ -238,7 +276,7 @@ body::-webkit-scrollbar-thumb {
 .section-text {
     font-family: 'Bebas Neue', cursive;
     color: #1965e0 !important;
-    font-size: 22pt;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -258,12 +296,13 @@ body::-webkit-scrollbar-thumb {
 
 /* About me text style*/
 .description {
-    color: #3C50FF !important;
+    color: #214ed3!important;
 }
 
 /* Logo Section  Text */
 .logo-text {
     font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
 }
 
 .elisha {
@@ -367,6 +406,32 @@ body::-webkit-scrollbar-thumb {
     height: 100% !important;
 }
 
+.about-card{
+    border-style: none !important;
+    border: #0a0a0a;
+    background-color: #EFF3FF;
+    border-width: 1px;
+    margin: 10px 4px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.015);
+    color: #0a0a0a !important;
+    height: 100% !important;
+}
+
+.about-container{
+    padding-left: 10%;
+}
+
+/* Cards on the about page */
+.card-s {
+    border-radius: 10px;
+}
+
+.rounded-start {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 /* Align card right on desktop view*/
 
 .img-right {
@@ -393,9 +458,17 @@ body::-webkit-scrollbar-thumb {
     font-weight: 100;
 }
 
-.card-body {
-    text-align: center;
-}
+.overlay-image {
+    position: absolute;
+    top: -45px;
+    left: 98%;
+    transform: translateX(-50%);
+  }
+  
+  .overlay-image img {
+    width: 100px; /* Adjust the width of the overlay image */
+    height: auto;
+  }
 
 .card-title {
     color: #0a0a0a !important;
@@ -627,7 +700,6 @@ body::-webkit-scrollbar-thumb {
 .btn-primary-s {
     background-color: #ffffff !important;
     color: #000;
-    border-color: #f0655300 !important;
     border-radius: 30px;
 }
 
@@ -773,9 +845,36 @@ body::-webkit-scrollbar-thumb {
 /*Responsive adjustments for mobile view*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
 
+    .image-container {
+        padding-top: 2px;
+        /* Adjust the desired top padding */
+        padding-bottom: 2px;
+        /* Adjust the desired bottom padding */
+        overflow: hidden;
+    }
+
+    .section-text {
+        font-family: 'Bebas Neue', cursive;
+        color: #1965e0 !important;
+        font-size: 30px;
+    }  
+
+    /* Smallen the card size in mobile view*/
+    .skills-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
     /* Smallen the font size in mobile view*/
     .elisha {
         font-size: 40px;
+    }
+
+    /*Adds a top padding for mobile view*/
+    .about-container{
+        padding-left: 10%;
+        padding-top: 10%;
     }
 
     /* Adds additional padding when in mobile view */
@@ -910,6 +1009,12 @@ body::-webkit-scrollbar-thumb {
         /* Adjust the margin value to increase or decrease the gap */
     }
 
+    /* Adds more space between dividers on smaller screen*/
+    .logo-padding {
+        padding-top: 10%;
+        padding-bottom: 6%;
+    }
+
     /* adjusts button style in the navbar dropdown */
     .btn-nav {
         color: black !important;
@@ -986,6 +1091,12 @@ body::-webkit-scrollbar-thumb {
 
     .elisha {
         font-size: 55px;
+    }
+
+    .section-text {
+        font-family: 'Bebas Neue', cursive;
+        color: #1965e0 !important;
+        font-size: 30px;
     }
 
     .asset-home-screen {
@@ -1457,16 +1568,6 @@ blockquote.testimony-29101 .author cite {
     border: none;
     margin: 10px 0;
     /* Adjust margin as needed */
-}
-
-/* svg Logo property */
-.logo-img-div {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    opacity: 80%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
 }
 
 .logo-img {
