@@ -1,15 +1,3 @@
-function callback() {
-    
-    const submitButton = document.getElementById("button1");
-    submitButton.removeAttribute("hidden");
-}
-
-window.addEventListener('scroll', function () {
-    let header = document.querySelector('header');
-
-    header.classList.toggle('scrolling-active');
-})
-
 //Interactive text on Landing
 var TxtRotate = function (el, toRotate, period) {
     this.toRotate = toRotate;
