@@ -83,7 +83,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @font-face {
-    font-family: 'Lato', serif;
+    font-family: 'Lato bold';
     src: url(/Assets/__fonts/Lato/Lato-Bold.ttf);
     font-weight: bold;
 }
@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .source-pro {
-    font-family: 'Lato', serif;
+    font-family: 'Lato bold';
     /* Font for Headers */
 }
 
