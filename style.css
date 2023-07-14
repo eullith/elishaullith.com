@@ -73,13 +73,18 @@ body::-webkit-scrollbar-thumb {
 /* Fonts */
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato light';
+    src: url(/Assets/__fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Lato', serif;
     src: url(/Assets/__fonts/Lato/Lato-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
     src: url(/Assets/__fonts/Lato/Lato-Bold.ttf);
     font-weight: bold;
 }
@@ -113,6 +118,11 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10%;
 }
 
+.tools-padding {
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
 .home-padding {
     padding-top: 6%;
     padding-bottom: 4%;
@@ -134,6 +144,16 @@ body::-webkit-scrollbar-thumb {
 .container-fluid {
     padding-left: 5%;
     padding-right: 5% !important;
+}
+
+.container-about {
+    padding-left: 6%;
+    padding-right: 6% !important;
+}
+
+.contact-padding {
+    padding-bottom: 5%;
+    padding-top: 5% !important;
 }
 
 /* Items below text spacing */
@@ -210,17 +230,24 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.045);
+    border-radius: 25px;
 }
 
-.about-image{
+.about-image {
     width: 50%;
     height: auto;
     margin-bottom: 20px;
 }
 
 .skills-padding {
-    padding-top: 2%;
-    padding-bottom: 3%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.collab-padding {
+    padding-top: 0%;
+    padding-bottom: 2%;
 }
 
 /* Background Images */
@@ -296,7 +323,7 @@ body::-webkit-scrollbar-thumb {
 
 /* About me text style*/
 .description {
-    color: #214ed3!important;
+    color: #3C50FF !important;
 }
 
 /* Logo Section  Text */
@@ -406,25 +433,29 @@ body::-webkit-scrollbar-thumb {
     height: 100% !important;
 }
 
-.about-card{
+.about-card {
     border-style: none !important;
     border: #0a0a0a;
-    background-color: #EFF3FF;
+    background-color: #1965e0;
     border-width: 1px;
     margin: 10px 4px;
     border-radius: 18px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.015);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.035);
     color: #0a0a0a !important;
     height: 100% !important;
 }
 
-.about-container{
+.about-container {
     padding-left: 10%;
 }
 
 /* Cards on the about page */
 .card-s {
     border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
 }
 
 .rounded-start {
@@ -463,12 +494,18 @@ body::-webkit-scrollbar-thumb {
     top: -45px;
     left: 98%;
     transform: translateX(-50%);
-  }
-  
-  .overlay-image img {
-    width: 100px; /* Adjust the width of the overlay image */
+}
+
+.overlay-image img {
+    width: 100px;
+    /* Adjust the width of the overlay image */
     height: auto;
-  }
+}
+
+.card-img-values{
+    width: 60px;
+    height: auto;
+}
 
 .card-title {
     color: #0a0a0a !important;
@@ -857,7 +894,8 @@ body::-webkit-scrollbar-thumb {
         font-family: 'Bebas Neue', cursive;
         color: #1965e0 !important;
         font-size: 30px;
-    }  
+        font-weight: 400 !important;
+    }
 
     /* Smallen the card size in mobile view*/
     .skills-image {
@@ -872,9 +910,8 @@ body::-webkit-scrollbar-thumb {
     }
 
     /*Adds a top padding for mobile view*/
-    .about-container{
-        padding-left: 10%;
-        padding-top: 10%;
+    .about-container {
+        padding: 10% 10% 0% 10%;
     }
 
     /* Adds additional padding when in mobile view */
@@ -1097,6 +1134,7 @@ body::-webkit-scrollbar-thumb {
         font-family: 'Bebas Neue', cursive;
         color: #1965e0 !important;
         font-size: 30px;
+        font-weight: 400 !important;
     }
 
     .asset-home-screen {
@@ -1131,6 +1169,15 @@ body::-webkit-scrollbar-thumb {
 
     .text-container {
         max-width: 80%;
+    }
+
+    .about-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-container {
+        padding: 10% 10% 0% 10%;
     }
 
     .card-img {
