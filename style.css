@@ -335,7 +335,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 90px;
     font-weight: 600;
     color: #3C50FF !important;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato bold';
 }
 
 /* Big Javascript Text */
@@ -1574,7 +1574,7 @@ blockquote.testimony-29101 .author cite {
     position: relative;
     transform: translate3d(var(--move-initial), 0, 0);
     animation: marquee 15s linear infinite alternate-reverse;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     background-color: #3C50FF;
     color: white;
 }
