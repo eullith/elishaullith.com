@@ -118,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .tools-padding {
-    padding-top: 6%;
+    padding-top: 4%;
     padding-bottom: 6%;
 }
 
@@ -327,7 +327,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Logo Section  Text */
 .logo-text {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 30px;
 }
 
