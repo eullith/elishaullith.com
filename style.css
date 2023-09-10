@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
 @font-face {
     font-family: 'Bebas Neue', cursive;
     src: url(/Assets/__fonts/BebasNeue-Regular.ttf);
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .source-pro {
@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bebas-nue {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     /* Font for sections call outs */
 }
 
@@ -301,10 +301,9 @@ body::-webkit-scrollbar-thumb {
 
 /* Bebas Nue Section Small Text */
 .section-text {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     color: #1965e0 !important;
     font-size: 30px;
-    font-weight: 600;
 }
 
 .p-text {
@@ -328,7 +327,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Logo Section  Text */
 .logo-text {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 30px;
 }
 
@@ -484,7 +483,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     color: #fff;
     font-weight: bold;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 30px;
     font-weight: 100;
 }
@@ -891,10 +890,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     .section-text {
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Bebas Neue';
         color: #1965e0 !important;
         font-size: 30px;
-        font-weight: 400 !important;
     }
 
     /* Smallen the card size in mobile view*/
@@ -1154,10 +1152,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     .section-text {
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Bebas Neue';
         color: #1965e0 !important;
         font-size: 30px;
-        font-weight: 400 !important;
     }
 
     .asset-home-screen {
@@ -1598,7 +1595,7 @@ blockquote.testimony-29101 .author cite {
     position: relative;
     transform: translate3d(var(--move-initial), 0, 0);
     animation: marquee 15s linear infinite alternate-reverse;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     background-color: #3C50FF;
     color: white;
 }
