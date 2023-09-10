@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url(/Assets/__fonts/BebasNeue-Regular.ttf) format('truetype');
+    src: url(/Assets/__fonts/Bebas-Neue-Book/BebasNeue\ Regular.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
