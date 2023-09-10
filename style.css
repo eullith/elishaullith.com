@@ -91,6 +91,7 @@ body::-webkit-scrollbar-thumb {
 @font-face {
     font-family: 'Bebas Neue', cursive;
     src: url(/Assets/__fonts/BebasNeue-Regular.ttf);
+    font-weight: 400;
 }
 
 .source-pro {
@@ -327,7 +328,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Logo Section  Text */
 .logo-text {
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', cursive;
     font-size: 30px;
 }
 
@@ -435,7 +436,7 @@ body::-webkit-scrollbar-thumb {
 .about-card {
     border-style: none !important;
     border: #0a0a0a;
-    background-color: #1965e0;
+    background-color: #3a5bbc;
     border-width: 1px;
     margin: 10px 4px;
     border-radius: 18px;
@@ -501,7 +502,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
 }
 
-.card-img-values{
+.card-img-values {
     width: 60px;
     height: auto;
 }
@@ -1100,6 +1101,25 @@ body::-webkit-scrollbar-thumb {
         margin: 7px 0px 10px 0px !important;
         padding: 0px 15px 0px 15px !important;
     }
+
+    .contact-padding {
+        padding-bottom: 12% !important;
+        padding-top: 12% !important;
+    }
+
+    .div-footer {
+        padding-top: 12% !important;
+    }
+
+    .special-padding {
+        padding-top: 0%;
+        padding-bottom: 20%;
+    }
+
+    .container-padding {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
 }
 
 /* Footer properties */
@@ -1127,6 +1147,10 @@ body::-webkit-scrollbar-thumb {
 
     .elisha {
         font-size: 55px;
+    }
+
+    .img-right {
+        text-align: right;
     }
 
     .section-text {
@@ -1176,7 +1200,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .about-container {
-        padding: 10% 10% 0% 10%;
+        padding: 0% 0% 0% 10%;
     }
 
     .card-img {
@@ -1574,7 +1598,7 @@ blockquote.testimony-29101 .author cite {
     position: relative;
     transform: translate3d(var(--move-initial), 0, 0);
     animation: marquee 15s linear infinite alternate-reverse;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', cursive;
     background-color: #3C50FF;
     color: white;
 }
@@ -1647,6 +1671,18 @@ blockquote.testimony-29101 .author cite {
 .card {
     margin-bottom: 20px;
 }
+
+/* Removes underline and purple color from link*/
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #3C50FF;
+}
+
 
 @media (max-width: 575.98px) {
     .card-deck .card {
