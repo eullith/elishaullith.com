@@ -1,0 +1,1 @@
+window.globalProvideData('caption', '{"data":"WEBVTT%0D%0AKind:%20captions%0D%0ASource:%20Articulate%20Closed%20Captions%20Editor%0D%0ASource%20Version:%203.90.32850.0%0D%0A%0D%0A00:00:00.150%20--%3E%2000:00:02.586%0D%0A%C2%BFTienes%20alg%C3%BAn%20s%C3%ADntoma%20de%20dependencia%20en%20tu%20vida?%0D%0A%0D%0A"}')
