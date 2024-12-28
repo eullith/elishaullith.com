@@ -1,5 +1,0 @@
-
-(function() {
-    const data = {"transcripts":[{"name":"captions","cues":[{"start":96,"text":"A lo largo de la historia, y a menudo en la actualidad,"},{"start":2813,"text":"la adicción se ha considerado un fallo moral, una debilidad o un pecado."},{"start":7648,"text":"Sin embargo, la Asociación Médica Americana "},{"start":10185,"text":"clasificó el alcoholismo como una enfermedad de la química cerebral en 1955. "},{"start":16032,"text":"Desde entonces, el campo ha extendido este concepto a otras drogas, utilizando los términos diagnósticos "},{"start":21828,"text":"\"abuso de sustancias psicoactivas\" y \"dependencia de sustancias psicoactivas\" para denotar niveles de gravedad."},{"start":28064,"text":"Las sustancias psicoactivas incluyen categorías de drogas como la cocaína, "},{"start":32160,"text":"los opiáceos, las anfetaminas y el cannabis, entre otras."}]}]};
-    window.globalLoadJsAsset('story_content/5o1G7cdrLSE_transcripts.js', JSON.stringify(data));
-})();

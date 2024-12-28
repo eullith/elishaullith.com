@@ -1,5 +1,0 @@
-
-(function() {
-    const data = {"transcripts":[{"name":"captions","cues":[{"start":71,"text":"Los medicamentos recetados pueden ser"},{"start":2205,"text":"opioides, estimulantes o depresores."},{"start":5312,"text":"Son medicamentos que han sido recetados"},{"start":7552,"text":"por un médico para tratar una condición médica específica."},{"start":11072,"text":"Aunque estos fármacos pueden ser \r\nbeneficiosos cuando se utilizan según las indicaciones,"},{"start":15680,"text":"el uso indebido de \r\nmedicamentos recetados,"},{"start":18368,"text":"tomar la medicación de otra persona, tomar la \r\npropia medicación de forma no prescrita "},{"start":23008,"text":"o tomarla para drogarse, puede \r\ntener consecuencias graves y ser incluso mortal."},{"start":28480,"text":"Es importante recordar que el uso indebido de"},{"start":31232,"text":"medicamentos recetados se \r\nconsidera abuso de drogas y es ilegal,"},{"start":34497,"text":"al igual que el consumo de drogas ilegales."}]}]};
-    window.globalLoadJsAsset('story_content/5j9ivVNIhB9_transcripts.js', JSON.stringify(data));
-})();

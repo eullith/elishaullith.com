@@ -1,1 +1,0 @@
-window.globalProvideData('caption', '{"data":"WEBVTT%0D%0AKind:%20captions%0D%0ASource:%20Articulate%20Closed%20Captions%20Editor%0D%0ASource%20Version:%203.90.32850.0%0D%0A%0D%0A00:00:00.150%20--%3E%2000:00:04.441%0D%0AInvertir%20mucho%20tiempo%20en%20obtener,%20utilizar%20o%20recuperar%20la%20droga%20en%20cuesti%C3%B3n.%0D%0A%0D%0A"}')
