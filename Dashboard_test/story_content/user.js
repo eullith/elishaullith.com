@@ -94,13 +94,13 @@ window.Script6 = function()
 window.Script7 = function()
 {
   //Question correct
-gtag('send','event','Question','incorrect','Question 2');
+ga('send','event','Question','incorrect','Question 2');
 }
 
 window.Script8 = function()
 {
   //Question correct
-gtag('send','event','Question','correct','Question 2');
+ga('send','event','Question','correct','Question 2');
 }
 
 window.Script9 = function()
@@ -142,13 +142,13 @@ gtag('event', 'quiz_question', {
 window.Script13 = function()
 {
   //Question correct
-gtag('send','event','Question','incorrect','Question 3');
+ga('send','event','Question','incorrect','Question 3');
 }
 
 window.Script14 = function()
 {
   //Question correct
-gtag('send','event','Question','correct','Question 3');
+ga('send','event','Question','correct','Question 3');
 }
 
 };
