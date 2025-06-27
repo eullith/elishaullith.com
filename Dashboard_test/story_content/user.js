@@ -43,13 +43,13 @@ gtag('event', 'quiz_question', {
 window.Script5 = function()
 {
   //Question correct
-ga('send','event','Question','incorrect','Question 1');
+gtag('send','event','Question','incorrect','Question 1');
 }
 
 window.Script6 = function()
 {
   //Question correct
-ga('send','event','Question','correct','Question 1');
+gtag('send','event','Question','correct','Question 1');
 }
 
 window.Script7 = function()
@@ -91,13 +91,13 @@ gtag('event', 'quiz_question', {
 window.Script11 = function()
 {
   //Question correct
-ga('send','event','Question','incorrect','Question 2');
+  gtag('send','event','Question','incorrect','Question 2');
 }
 
 window.Script12 = function()
 {
   //Question correct
-ga('send','event','Question','correct','Question 2');
+  gtag('send','event','Question','correct','Question 2');
 }
 
 window.Script13 = function()
@@ -139,13 +139,13 @@ gtag('event', 'quiz_question', {
 window.Script17 = function()
 {
   //Question correct
-ga('send','event','Question','incorrect','Question 3');
+  gtag('send','event','Question','incorrect','Question 3');
 }
 
 window.Script18 = function()
 {
   //Question correct
-ga('send','event','Question','correct','Question 3');
+  gtag('send','event','Question','correct','Question 3');
 }
 
 };
