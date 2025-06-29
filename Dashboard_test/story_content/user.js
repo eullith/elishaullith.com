@@ -7,32 +7,9 @@ var setVar = player.SetVar;
 var getVar = player.GetVar;
 window.Script1 = function()
 {
-  var player = GetPlayer();
-var slideName = player.GetVar("Menu.SlideTitle");
-
-// 1. Track screen view
-gtag('event', 'screen_view', {
-  screen_name: slideName,
-  app_name: 'GA4 Test' // Optional, but helps in GA4 hierarchy
+  gtag('event', 'test_event', {
+  'test_param': 'hello_from_storyline'
 });
-
-// 2. Calculate time spent
-if (typeof window.slideStartTime !== 'undefined') {
-  var endTime = new Date().getTime();
-  var timeSpent = Math.round((endTime - window.slideStartTime) / 1000);
-
-  gtag('event', 'slide_time_spent', {
-    slide_name: slideName,
-    time_spent_seconds: timeSpent
-  });
-  
-    console.log(`Sent time spent: ${slideName} - ${timeSpent}s`);
-} else {
-  console.warn('slideStartTime was not defined.');
-}
-
-// 3. Reset start time for next slide
-window.slideStartTime = new Date().getTime();
 }
 
 window.Script2 = function()
