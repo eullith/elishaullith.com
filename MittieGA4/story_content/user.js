@@ -7,11 +7,13 @@ var setVar = player.SetVar;
 var getVar = player.GetVar;
 window.Script1 = function()
 {
-  Get Var Pagetitle from Storylune
-var player = GetPlayer();
+  var player = GetPlayer();
 var pagetitle = player.GetVar("PageTitle");
 
-gtag('send', 'screenview', {screenName: pagetitle});
+gtag('event', 'page_view', {
+  page_title: pagetitle,
+  page_location: window.location.href
+});
 }
 
 window.Script2 = function()
