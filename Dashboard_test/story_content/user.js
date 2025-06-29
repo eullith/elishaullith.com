@@ -7,48 +7,47 @@ var setVar = player.SetVar;
 var getVar = player.GetVar;
 window.Script1 = function()
 {
-  function trackSlide() {
   var player = GetPlayer();
-  var slideName = player.GetVar("Menu.SlideTitle") || "Unnamed Slide";
+var slideName = player.GetVar("Menu.SlideTitle");
 
-  // 1. Slide view
-  gtag('event', 'slide_view', {
-    'slide_name': slideName
+// 1. Track screen view
+gtag('event', 'screen_view', {
+  screen_name: slideName,
+  app_name: 'GA4 Test' // Optional, but helps in GA4 hierarchy
+});
+
+// 2. Calculate time spent
+if (typeof window.slideStartTime !== 'undefined') {
+  var endTime = new Date().getTime();
+  var timeSpent = Math.round((endTime - window.slideStartTime) / 1000);
+
+  gtag('event', 'slide_time_spent', {
+    slide_name: slideName,
+    time_spent_seconds: timeSpent
   });
-
-  // 2. Start timer
-  if (!window.slideStartTime) {
-    window.slideStartTime = new Date().getTime();
-  }
-
-  // 3. On exit or next button, track time
-  window.addEventListener("beforeunload", function () {
-    var endTime = new Date().getTime();
-    var timeSpent = Math.round((endTime - window.slideStartTime) / 1000);
-
-    gtag('event', 'slide_time_spent', {
-      'slide_name': slideName,
-      'time_spent_seconds': timeSpent
-    });
-
-    console.log(`slide_time_spent sent for: ${slideName}, time: ${timeSpent}s`);
-  });
+  
+    console.log(`Sent time spent: ${slideName} - ${timeSpent}s`);
+} else {
+  console.warn('slideStartTime was not defined.');
 }
+
+// 3. Reset start time for next slide
+window.slideStartTime = new Date().getTime();
 }
 
 window.Script2 = function()
 {
   var player = GetPlayer();
-var result = player.GetVar("Question1_Result"); // should be "correct" or "incorrect"
+var result = player.GetVar("Question1_Result"); // This must be set to "correct" or "incorrect"
 
-if (typeof gtag === 'function' && result) {
+if (result && typeof gtag === 'function') {
   gtag('event', 'quiz_question', {
     'question_id': 'Question 1',
     'answer_result': result.toLowerCase()
   });
-  console.log("GA4 event sent: Question 1 - " + result);
+  console.log("GA4 quiz_question sent:", result);
 } else {
-  console.warn("GA4 event NOT sent: missing gtag or result for Question 1");
+  console.warn("gtag not defined or Question1_Result missing");
 }
 }
 
@@ -66,57 +65,18 @@ ga('send','event','Question','correct','Question 1');
 
 window.Script5 = function()
 {
-  trackSlide();
-}
-
-window.Script6 = function()
-{
-  window.trackQuizQuestion = function(questionId, storylineVarName) {
-  var player = GetPlayer();
-  var result = player.GetVar(storylineVarName);
-
-  if (!result) {
-    console.warn(`No result found for ${questionId}`);
-    return;
-  }
-
-  var answer_result = (result.toLowerCase() === "correct") ? "correct" : "incorrect";
-
-  gtag('event', 'quiz_question', {
-    'question_id': questionId,
-    'answer_result': answer_result
-  });
-
-  console.log(`quiz_question event sent for ${questionId}: ${answer_result}`);
-};
-}
-
-window.Script7 = function()
-{
-  //Question correct
-ga('send','event','Question','incorrect','Question 2');
-}
-
-window.Script8 = function()
-{
-  //Question correct
-ga('send','event','Question','correct','Question 2');
-}
-
-window.Script9 = function()
-{
   gtag('event', 'slide_view', {
-  'slide_name': 'Question 3'
+  'slide_name': 'Question 2'
 });
 }
 
-window.Script10 = function()
+window.Script6 = function()
 {
   var startTime = new Date().getTime();
 window.slideStartTime = startTime;
 }
 
-window.Script11 = function()
+window.Script7 = function()
 {
   var endTime = new Date().getTime();
 var timeSpent = Math.round((endTime - window.slideStartTime)/1000);  // in seconds
@@ -127,7 +87,55 @@ gtag('event', 'slide_time_spent', {
 });
 }
 
+window.Script8 = function()
+{
+  var player = GetPlayer();
+var result = player.GetVar("Question2_Result");
+var isCorrect = (result == "correct") ? "correct" : "incorrect";
+
+gtag('event', 'quiz_question', {
+  'question_id': 'Question 2',
+  'answer_result': result
+});
+}
+
+window.Script9 = function()
+{
+  //Question correct
+ga('send','event','Question','incorrect','Question 2');
+}
+
+window.Script10 = function()
+{
+  //Question correct
+ga('send','event','Question','correct','Question 2');
+}
+
+window.Script11 = function()
+{
+  gtag('event', 'slide_view', {
+  'slide_name': 'Question 3'
+});
+}
+
 window.Script12 = function()
+{
+  var startTime = new Date().getTime();
+window.slideStartTime = startTime;
+}
+
+window.Script13 = function()
+{
+  var endTime = new Date().getTime();
+var timeSpent = Math.round((endTime - window.slideStartTime)/1000);  // in seconds
+
+gtag('event', 'slide_time_spent', {
+  'slide_name': 'Slide 1 - Introduction',
+  'time_spent_seconds': timeSpent
+});
+}
+
+window.Script14 = function()
 {
   var player = GetPlayer();
 var result = player.GetVar("Question3_Result");
@@ -139,13 +147,13 @@ gtag('event', 'quiz_question', {
 });
 }
 
-window.Script13 = function()
+window.Script15 = function()
 {
   //Question correct
 ga('send','event','Question','incorrect','Question 3');
 }
 
-window.Script14 = function()
+window.Script16 = function()
 {
   //Question correct
 ga('send','event','Question','correct','Question 3');
