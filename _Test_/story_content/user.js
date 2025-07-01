@@ -10,8 +10,8 @@ window.Script1 = function()
   var player = GetPlayer();
 var screenName = player.GetVar("SlideTitle");
 
-gtag('event', 'screen_view', {
-  'screen_name': screenName
+gtag('event', 'page_view', {
+  'page_title': screenName
 });
 
 gtag('event', 'course_started', {
@@ -25,8 +25,8 @@ window.Script2 = function()
   var player = GetPlayer();
 var screenName = player.GetVar("SlideTitle");
 
-gtag('event', 'screen_view', {
-'screen_name': screenName
+gtag('event', 'page_view', {
+  'page_title': screenName
 });
 }
 
@@ -39,7 +39,7 @@ var questionID = player.GetVar("Q1");
 
  gtag('event', 'quiz_question', {
  	'course_name': 'Dashboard Test',
- 	'slide_name': slideName, 
+ 	'page_title': slideName, 
     'question_id': questionID,
     'answer_result': result
 });
@@ -50,8 +50,8 @@ window.Script4 = function()
   var player = GetPlayer();
 var screenName = player.GetVar("SlideTitle");
 
-gtag('event', 'screen_view', {
-'screen_name': screenName
+gtag('event', 'page_view', {
+  'page_title': screenName
 });
 }
 
@@ -64,7 +64,7 @@ var questionID = player.GetVar("Q2");
 
 gtag('event', 'quiz_question', {
   'course_name': 'Dashboard Test',
- 	'slide_name': slideName,
+ 	'page_title': slideName,
   'question_id': questionID,
   'answer_result': result
 });
@@ -75,8 +75,8 @@ window.Script6 = function()
   var player = GetPlayer();
 var screenName = player.GetVar("SlideTitle");
 
-gtag('event', 'screen_view', {
-'screen_name': screenName
+gtag('event', 'page_view', {
+  'page_title': screenName
 });
 }
 
@@ -89,7 +89,7 @@ var questionID = player.GetVar("Q3");
 
 gtag('event', 'quiz_question', {
   'course_name': 'Dashboard Test',
- 	'slide_name': slideName, 
+ 	'page_title': slideName, 
   'question_id': questionID,
   'answer_result': result
 });
@@ -98,20 +98,12 @@ gtag('event', 'quiz_question', {
 window.Script8 = function()
 {
   var player = GetPlayer();
-var screenName = player.GetVar("SlideTitle");
-
-gtag('event', 'screen_view', {
-  'screen_name': screenName
-});
-}
-
-window.Script9 = function()
-{
-  var player = GetPlayer();
 var totalScore = player.GetVar("ScorePoints");
 var scorePercent = player.GetVar("ScorePercent");
+var screenName = player.GetVar("SlideTitle");
 
 gtag('event', 'quiz_score', {
+	'screen_name': screenName,
 	'total_score': totalScore,
 	'score_percent': scorePercent,
 	'timestamp': new Date().toISOString()
