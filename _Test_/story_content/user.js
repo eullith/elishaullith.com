@@ -108,8 +108,8 @@ gtag('event', 'screen_view', {
 window.Script9 = function()
 {
   var player = GetPlayer();
-var totalScore = player.GetVar("Quiz1.ScorePoints");
-var scorePercent = player.GetVar("Quiz1.ScorePercent");
+var totalScore = player.GetVar("ScorePoints");
+var scorePercent = player.GetVar("ScorePercent");
 
 gtag('event', 'quiz_score', {
 	'total_score': totalScore,
