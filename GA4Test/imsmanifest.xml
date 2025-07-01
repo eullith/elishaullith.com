@@ -6,7 +6,7 @@
     <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
       <general>
         <title>
-          <langstring xml:lang="x-none">GA4 Test</langstring>
+          <langstring xml:lang="x-none">GA4Test</langstring>
         </title>
       </general>
       <lifecycle>
@@ -50,11 +50,11 @@
       </rights>
     </lom>
   </metadata>
-  <organizations default="GA4_Test_ORG">
-    <organization identifier="GA4_Test_ORG">
-      <title>GA4 Test</title>
+  <organizations default="GA4Test_ORG">
+    <organization identifier="GA4Test_ORG">
+      <title>GA4Test</title>
       <item identifier="Dashboard_test_SCO" isvisible="true" identifierref="__6Y0wW9dEYTc_course_id_RES">
-        <title>GA4 Test</title>
+        <title>GA4Test</title>
         <adlcp:masteryscore>100</adlcp:masteryscore>
       </item>
     </organization>
