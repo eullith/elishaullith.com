@@ -42,7 +42,7 @@ var questionID = player.GetVar("Q1");
  	'slide_name': slideName, 
     'question_id': questionID,
     'answer_result': result
-  });
+});
 }
 
 window.Script4 = function()
