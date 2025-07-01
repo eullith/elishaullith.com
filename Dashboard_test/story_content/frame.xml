@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="npnxnanbsnfns00001000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
+<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="pxabnsnfns00001000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
   <layouts>
-    <layout name="npnxnanbsnfns00001000101" font="Lato" controllayout="npnxnanbsnfns00001000101" colorscheme="npnxnanbsnfns00001000101" string_table="npnxnanbsnfns00001000101" />
-    <layout name="pxabnsnfns00001000101" font="Lato" controllayout="pxabnsnfns00001000101" colorscheme="npnxnanbsnfns00001000101" string_table="npnxnanbsnfns00001000101" />
-    <layout name="npxnabnsnfns00001000101" font="Lato" controllayout="npxnabnsnfns00001000101" colorscheme="npnxnanbsnfns00001000101" string_table="npnxnanbsnfns00001000101" />
-    <layout name="npnxnanbnsnfns00001000101" font="Lato" controllayout="npnxnanbnsnfns00001000101" colorscheme="npnxnanbsnfns00001000101" string_table="npnxnanbsnfns00001000101" />
-    <layout name="pxabnsnfns00001000100" font="Lato" controllayout="pxabnsnfns00001000100" colorscheme="npnxnanbsnfns00001000101" string_table="npnxnanbsnfns00001000101" />
+    <layout name="npnxnanbsnfns00001000101" font="Lato" controllayout="npnxnanbsnfns00001000101" colorscheme="pxabnsnfns00001000101" string_table="pxabnsnfns00001000101" />
+    <layout name="pxabnsnfns00001000101" font="Lato" controllayout="pxabnsnfns00001000101" colorscheme="pxabnsnfns00001000101" string_table="pxabnsnfns00001000101" />
+    <layout name="npxnabnsnfns00001000101" font="Lato" controllayout="npxnabnsnfns00001000101" colorscheme="pxabnsnfns00001000101" string_table="pxabnsnfns00001000101" />
+    <layout name="npnxnanbnsnfns00001000101" font="Lato" controllayout="npnxnanbnsnfns00001000101" colorscheme="pxabnsnfns00001000101" string_table="pxabnsnfns00001000101" />
+    <layout name="pxabnsnfns00001000100" font="Lato" controllayout="pxabnsnfns00001000100" colorscheme="pxabnsnfns00001000101" string_table="pxabnsnfns00001000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -232,7 +232,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npnxnanbsnfns00001000101">
+    <colorscheme name="pxabnsnfns00001000101">
       <color_group name="accessibility">
         <group_colors>
           <color name="focus_rect">
@@ -1409,7 +1409,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npnxnanbsnfns00001000101">
+    <string_table name="pxabnsnfns00001000101">
       <string id="acc_cc_hide">Hide captions (Ctrl+Alt+C)</string>
       <string id="acc_cc_show">Show captions (Ctrl+Alt+C)</string>
       <string id="acc_enter_fullscreen">Enter full-screen (Ctrl+Alt+F)</string>
@@ -1564,6 +1564,7 @@
       <links>
         <slidelink slideid="_player.67nwGAMDOov" displaytext="Diagnostic Scenarios" expand="false" type="slide">
           <links>
+            <slidelink slideid="_player.67nwGAMDOov.6MsKGMEgRhd" displaytext="Start Course" expand="false" type="slide" />
             <slidelink slideid="_player.67nwGAMDOov.6UQhtTGK0iy" displaytext="Question 1" expand="false" type="slide" />
             <slidelink slideid="_player.67nwGAMDOov.6qb7PL5G4Sd" displaytext="Question 2" expand="false" type="slide" />
             <slidelink slideid="_player.67nwGAMDOov.6I3k7enC5KD" displaytext="Question 3" expand="false" type="slide" />
